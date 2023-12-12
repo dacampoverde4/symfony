@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'all.technical_notices'|trans }} - {{ parent() }}{% endblock %}
+
+{% block description %}{{ 'bonus.description_technical_notices'|trans }}{% endblock %}
+
+{% block body %}
+		<section id="general">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>{{ 'all.technical_notices'|trans }}</h2>
+						<hr class="star-light">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+				{% set lastCategoryId = null %}
+				{% for item in technicalNotices %}
+					{% if lastCategoryId != item.category.id %}
+						{% if not(loop.first) %}
+						</div>
+						{% endif %}
+						<h3>{{ item.category }}</h3>
+						<div class="list-group">
+					{% endif %}
+							<a href="{{ asset('downloads/'~item.link) }}" class="list-group-item" target="_blank">{{ item }}</a>
+					{% if loop.last %}
+						</div>
+					{% endif %}
+					{% set lastCategoryId = item.category.id %}
+				{% endfor %}
+					</div>
+				</div>
+			</div>
+		</section>
+{% endblock %}

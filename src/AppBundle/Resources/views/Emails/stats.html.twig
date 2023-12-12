@@ -1,0 +1,68 @@
+{% extends '::base_emails.html.twig' %}
+
+{% block body %}
+<p>Statistiques du site Web <a href="https://www.groupesasademarle.com">www.groupesasademarle.com</a> pour la période du {{ weekStart|date('d/m/Y') }} au {{ weekEnd|date('d/m/Y') }}.</p>
+<h5>Pages visitées</h5>
+<table>
+	<tr>
+		<td style="vertical-align:top;">
+			<table style="font-family:Arial;font-size:10pt;border-collapse:collapse;">
+				<tr>
+					<th style="border:1px #ddd solid;border-bottom-width:2px;padding:5px;">Pages</th>
+					<th style="border:1px #ddd solid;border-bottom-width:2px;padding:5px;">Pages vues</th>
+					<th style="border:1px #ddd solid;border-bottom-width:2px;padding:5px;">Temps moyen passé</th>
+				</tr>
+			{% for row in visitedPages.data.rows %}
+				<tr{% if loop.index is odd %} style="background-color:#f9f9f9;"{% endif %}>
+					<td style="border:1px #ddd solid;padding:5px;">{{ row.dimensions[0] }}</td>
+					<td style="border:1px #ddd solid;padding:5px;">{{ row.metrics[0].values[0] }}</td>
+					<td style="border:1px #ddd solid;padding:5px;">{{ row.metrics[0].values[1]|stringToTime }}</td>
+				</tr>
+			{% endfor %}
+				<tr>
+					<td style="border:1px #ddd solid;border-top-width:2px;padding:5px;font-weight:bold;">Total</td>
+					<td style="border:1px #ddd solid;border-top-width:2px;padding:5px;font-weight:bold;">{{ visitedPages.data.totals[0].values[0] }}</td>
+					<td style="border:1px #ddd solid;border-top-width:2px;padding:5px;font-weight:bold;">-</td>
+				</tr>
+			</table>
+		</td>
+		<td style="width:100px;"></td>
+		<td style="vertical-align:top;">
+			<div style="padding:10px;border:1px #ddd solid;"><img src="{{ visitedPagesByDate }}"></div>
+		</td>
+	</tr>
+</table>
+<h5>Visiteurs uniques</h5>
+<table>
+	<tr>
+		<td style="vertical-align:top;">
+			<table style="font-family:Arial;font-size:10pt;border-collapse:collapse;">
+				<tr>
+					<th style="border:1px #ddd solid;padding:5px;border-bottom-width:2px;">Pays</th>
+					<th style="border:1px #ddd solid;padding:5px;border-bottom-width:2px;">Visiteurs uniques</th>
+				</tr>
+			{% for row in visitorsLocations.data.rows %}
+				<tr{% if loop.index is odd %} style="background-color:#f9f9f9;"{% endif %}>
+					<td style="border:1px #ddd solid;padding:5px;">{{ row.dimensions[0] }}</td>
+					<td style="border:1px #ddd solid;padding:5px;">{{ row.metrics[0].values[0] }}</td>
+				</tr>
+			{% endfor %}
+				<tr>
+					<td style="border:1px #ddd solid;border-top-width:2px;padding:5px;font-weight:bold;">Total</td>
+					<td style="border:1px #ddd solid;border-top-width:2px;padding:5px;font-weight:bold;">{{ visitorsLocations.data.totals[0].values[0] }}</td>
+				</tr>
+			</table>
+		</td>
+		<td style="width:100px;"></td>
+		<td style="vertical-align:top;">
+			<div style="padding:10px;border:1px #ddd solid;"><img src="{{ visitorsByDate }}"></div>
+		</td>
+	</tr>
+</table>
+<h5>Formulaires</h5>
+<p>Nombre de contacts : {{ contactsAmount }}</p>
+<p>
+	Nombre de commandes : {{ ordersInformation['nbr'] }}<br>
+	Montant total : {{ ordersInformation['amt']|default(0)|intl_number('fr') }} €
+</p>
+{% endblock %}

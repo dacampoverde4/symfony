@@ -1,0 +1,4 @@
+bonus:
+    validators:
+        title_length: The title can not be longer than {{ limit }} characters.
+        link_length: The link can not be longer than {{ limit }} characters.

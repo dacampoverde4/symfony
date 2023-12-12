@@ -1,0 +1,261 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'all.shop'|trans }} - {{ parent() }}{% endblock %}
+
+{% block description %}{{ 'shop.description'|trans }}{% endblock %}
+
+{% block body %}
+		<section id="general">
+			<div class="container">
+		{% for label, messages in app.flashes %}
+			{% for message in messages %}
+				<div class="alert alert-{{ label }} alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					{{ message|trans }}
+				</div>
+			{% endfor %}
+		{% endfor %}
+
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>{{ 'all.shop'|trans }}</h2>
+						<hr class="star-light">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<p>{{ 'shop.intro_1'|trans }}<br>{{ 'shop.intro_2'|trans }}</p>
+						<small>* {{ 'shop.intro_note'|trans }}</small>
+					</div>
+				</div>
+
+				{{ form_start(form, {'attr': {'class': 'form-horizontal', 'style': 'margin-top:30px;', 'data-toggle': 'validator'}}) }}
+					{{ form_errors(form) }}
+
+					<div class="label-title">{{ 'shop.db.products'|trans }}</div>
+
+					<div class="row">
+					{% for salesOrderProduct in form.salesOrderProducts %}
+						<div class="col-lg-4 col-sm-6">
+							<div class="panel panel-default">
+								<div class="panel-heading product-panel">
+									<img src="{{ asset('img/products/'~(salesOrderProduct.vars.data.product.image is empty ? 'nothing.jpg' : salesOrderProduct.vars.data.product.image)) }}" class="img-responsive center-block" alt="{{ salesOrderProduct.vars.data.product.id }}">
+								</div>
+								<div class="panel-body">
+									<h5 class="shop-description">{{ salesOrderProduct.vars.data.product.id }}</h5>
+									<h4>{{ salesOrderProduct.vars.data.product.description1 }}<br>
+									{{ salesOrderProduct.vars.data.product.description2 }}<br>
+									{{ salesOrderProduct.vars.data.product.description3 }}</h4>
+									<h5 class="shop-price">
+										{{ 'shop.db.price'|trans }} {{ salesOrderProduct.vars.data.product.price|intl_number }} €<br>
+										{% if salesOrderProduct.vars.data.product.unit > 1 %}<small>{{ 'shop.by_lot_of'|trans }} {{ salesOrderProduct.vars.data.product.unit|intl_number }}</small>{% endif %}
+									</h5>
+								</div>
+								<div class="panel-footer">
+									<div class="form-group{% if salesOrderProduct.quantity.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+										{{ form_widget(salesOrderProduct.quantity, {'attr': {'step': salesOrderProduct.vars.data.product.unit, 'class': 'form-control input-quantity', 'data-product': salesOrderProduct.vars.data.product.id, 'data-description': salesOrderProduct.vars.data.product.description1, 'data-price': salesOrderProduct.vars.data.product.price~' €'}}) }}
+										<div class="validation-errors text-center">{{ form_errors(salesOrderProduct.quantity) }}</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						{% if loop.index0 % 3 == 2 %}<div class="clearfix visible-lg-block"></div>{% endif %}
+						{% if loop.index0 % 2 == 1 %}<div class="clearfix visible-sm-block visible-md-block"></div>{% endif %}
+					{% endfor %}
+					</div>
+
+					<div id="summary"></div>
+
+					<div class="label-title">{{ 'shop.db.information'|trans }}</div>
+
+					<div class="form-group form-group-lg{% if form.company.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.company, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								{{ form_widget(form.company, {'attr': {'placeholder': form.company.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.company) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.lastName.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.lastName, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								{{ form_widget(form.lastName, {'attr': {'placeholder': form.lastName.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.lastName) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.firstName.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.firstName, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								{{ form_widget(form.firstName, {'attr': {'placeholder': form.firstName.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.firstName) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.email.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.email, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+								{{ form_widget(form.email, {'attr': {'placeholder': form.email.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.email) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.phone.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.phone, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+								{{ form_widget(form.phone, {'attr': {'placeholder': form.phone.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.phone) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.crn.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.crn, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+								{{ form_widget(form.crn, {'attr': {'placeholder': form.crn.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.crn) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.address.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.address, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+								{{ form_widget(form.address, {'attr': {'placeholder': form.address.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.address) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.city.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.city, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+								{{ form_widget(form.city, {'attr': {'placeholder': form.city.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.city) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.zipCode.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.zipCode, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+								{{ form_widget(form.zipCode, {'attr': {'placeholder': form.zipCode.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.zipCode) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.country.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.country, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+								{{ form_widget(form.country, {'attr': {'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.country) }}
+						</div>
+					</div>
+					{{ form_widget(form.recaptcha) }}
+					{{ form_rest(form) }}
+					<br>
+					<div class="text-center">
+						<button type="submit" class="btn btn-primary btn-lg" id="btn_submit">{{ 'shop.send'|trans }} <span class="glyphicon glyphicon-send"></span></button>
+					</div>
+				{{ form_end(form) }}
+			</div>
+		</section>
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+<script src="{{ asset('js/bootstrap-number-input.min.js') }}"></script>
+<script src="{{ asset('js/jquery.validate.min.js') }}"></script>
+<script src="{{ asset('js/localization/jquery.validate.messages_'~app.request.getLocale()~'.min.js') }}"></script>
+<script>
+	var onSubmit = function() {
+		document.getElementsByName('{{ form.vars.name }}')[0].submit();
+	};
+
+	$(function() {
+		'use strict';
+
+		$('input[type="number"]').bootstrapNumber({
+			upClass: 'info',
+			downClass: 'danger',
+			center: true
+		});
+
+		$('form[name="{{ form.vars.name }}"]').validate({
+			submitHandler: function() {
+				if(! grecaptcha.getResponse()) {
+					grecaptcha.execute();
+				}
+			}
+		});
+
+		$('.input-quantity').change(function() {
+			var formatter = new Intl.NumberFormat('{{ app.request.getLocale() }}');
+			var table = $('<table class="table table-striped table-bordered"><thead><tr><th>{{ 'shop.db.product_no'|trans }}</th><th>{{ 'shop.db.description'|trans }}</th><th>{{ 'shop.db.quantity'|trans }}</th><th>{{ 'shop.db.price'|trans }}</th><th>{{ 'shop.db.amount'|trans }}</th></tr></thead>');
+			var totalAmount = 0.0;
+
+			$('.input-quantity').filter(function() {
+				return parseInt($(this).val(), 10) > 0;
+			}).each(function() {
+				var quantity = parseInt($(this).val(), 10);
+				var price = parseFloat($(this).attr('data-price'));
+				table.append('<tr><td>'+$(this).attr('data-product')+'</td><td>'+$(this).attr('data-description')+'</td><td>'+formatter.format(quantity)+'</td><td>'+formatter.format(price)+' €</td><td>'+formatter.format(quantity*price)+' €</td></tr>');
+				totalAmount += (quantity*price);
+			});
+
+			$('#summary').html('<div class="label-title">{{ 'shop.db.summary'|trans }}</div>');
+			$('#summary').append($('<div class="table-responsive">').append(table));
+			$('#summary').append('<strong class="pull-right">{{ 'shop.db.total_amount'|trans }} '+formatter.format(totalAmount)+' €</strong>');
+		});
+
+		$('.input-quantity:first').change();
+	});
+</script>
+{% endblock %}

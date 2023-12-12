@@ -1,0 +1,75 @@
+{% extends '::base_emails.html.twig' %}
+
+{% block body %}
+{{ 'shop.email.new_order_customer'|trans|nl2br }}<br>
+<table style="font-family:Arial;font-size:10pt;">
+	<tr>
+		<td style="font-weight:bold;">{{ 'shop.db.company'|trans }} :</td>
+		<td>{{ order.company }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'shop.db.last_name'|trans }} :</td>
+		<td>{{ order.lastName }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'shop.db.first_name'|trans }} :</td>
+		<td>{{ order.firstName }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'shop.db.email'|trans }} :</td>
+		<td>{{ order.email }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'shop.db.phone'|trans }} :</td>
+		<td>{{ order.phone }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'shop.db.crn'|trans }} :</td>
+		<td>{{ order.crn }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'shop.db.address'|trans }} :</td>
+		<td>{{ order.address }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'shop.db.city'|trans }} :</td>
+		<td>{{ order.city }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'shop.db.zip_code'|trans }} :</td>
+		<td>{{ order.zipCode }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'shop.db.country'|trans }} :</td>
+		<td>{{ order.country|countryName }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;vertical-align:top;">{{ 'shop.db.products'|trans }} :</td>
+		<td>
+			<table style="font-family:Arial;font-size:10pt;border-collapse:collapse;">
+				<tr>
+					<th style="border:1px black solid;padding:3px;">{{ 'shop.db.product_no'|trans }}</th>
+					<th style="border:1px black solid;padding:3px;">{{ 'shop.db.description'|trans }}</th>
+					<th style="border:1px black solid;padding:3px;">{{ 'shop.db.quantity'|trans }}</th>
+					<th style="border:1px black solid;padding:3px;">{{ 'shop.db.price'|trans }}</th>
+					<th style="border:1px black solid;padding:3px;">{{ 'shop.db.amount'|trans }}</th>
+				</tr>
+			{% set totalAmount = 0.0 %}
+			{% for salesOrderProduct in order.salesOrderProducts%}
+				<tr>
+					<td style="border:1px black solid;padding:3px;">{{ salesOrderProduct.product.id }}</td>
+					<td style="border:1px black solid;padding:3px;">{{ salesOrderProduct.product.description1 }}</td>
+					<td style="border:1px black solid;padding:3px;">{{ salesOrderProduct.quantity|intl_number }}</td>
+					<td style="border:1px black solid;padding:3px;">{{ salesOrderProduct.price|intl_number }} €</td>
+					<td style="border:1px black solid;padding:3px;">{{ (salesOrderProduct.quantity * salesOrderProduct.price)|intl_number }} €</td>
+				</tr>
+				{% set totalAmount = totalAmount + (salesOrderProduct.quantity * salesOrderProduct.price) %}
+			{% endfor %}
+			</table><br>
+			<strong>{{ 'shop.db.total_amount'|trans }}</strong> {{ totalAmount|intl_number }} €<br>
+			{{ 'shop.email.delivery_info'|trans }}
+		</td>
+	</tr>
+</table><br>
+{{ 'shop.email.thanks'|trans|nl2br }}
+{% endblock %}

@@ -1,0 +1,332 @@
+app:
+    description: Le groupe Sasa Demarle est le leader mondial de la conception et fabrication de supports de cuisson pour boulangeries, viennoiseries et pâtisseries.
+    previous_slide: Précédent
+    next_slide: Suivant
+    discover_flexipan: Découvrez la nouvelle image Flexipan®...
+    discover_sasa: Découvrez la nouvelle image Sasa...
+    learn_more: En savoir plus...
+    watch_the_video: Voir la vidéo
+    contact: Contact
+    customer_service: Service clients
+    rgpd_ok_1: Votre inscription a bien été prise en compte !
+    rgpd_ok_2: |
+        Vous changez d'avis ? Pas de problème !
+        Contactez-nous à %link_start%service.marketing@sasa-demarle.com%link_end%
+    rgpd_ko_1: Votre désinscription a bien été prise en compte !
+    rgpd_ko_2: |
+        Vous pouvez à tout moment vous réabonner.
+        Pour cela, contactez-nous à %link_start%service.marketing@sasa-demarle.com%link_end%
+    rgpd_button: Continuer
+    the_group_paragraph_1: "Le groupe Sasa Demarle est le leader mondial de la conception et fabrication de supports de cuisson principalement destinés aux professionnels de la boulangerie, viennoiserie et pâtisserie (BVP)."
+    the_group_paragraph_2: "Depuis plus de 30 ans le groupe s'est développé et a innové dans les revêtements anti-adhérents de ses produits : plaques et filets de cuisson, chariots, moules souples et tapis de cuisson."
+    our_sales_force: Notre force commerciale
+    map_distribution: Carte des commerciaux Distribution
+    map_industry: Carte des commerciaux Industrie
+    distribution_customers: Clients Distribution
+    industry_customers: Client Industrie
+    click_to_browse: Cliquez pour parcourir la carte
+    sasa_demarle_catalog: Catalogue Sasa Demarle
+    sasa_demarle_logo: Logo Sasa Demarle
+    click_view_catalog: |
+        Cliquez sur l’image pour consulter le catalogue en ligne
+        ou téléchargez le catalogue au format PDF en cliquant sur le lien ci-dessous
+    click_view_pdf: Catalogue Sasa Demarle – PDF
+    made_in_france: Fabriqué en France
+    united_states: ETATS-UNIS
+    information: Informations
+    photos_catalog: Catalogue photos
+    photos_catalog_text: Télécharger le fichier compressé de photos
+    terms_of_sales:
+        sasa: 
+            title: Conditions Générales de Vente SASA
+            description: Découvrez les Conditions Générales de Vente de SASA.
+            data:
+                - Application et opposabilité des Conditions Générales de Vente (CGV)
+                - >
+                    Le fait de passer commande implique l'adhésion entière et sans réserve de l'acheteur à nos conditions générales de vente.
+                    Aucune condition ne peut, sauf acceptation expresse et écrite de notre part, prévaloir sur nos CGV. Toute condition contraire
+                    posée par l'acheteur est, à défaut de notre acceptation expresse, inopposable à notre société, quel que soit le moment où elle
+                    peut être portée à notre connaissance, même si elle figure dans les conditions générales d'achat de l'acquéreur. Le fait que nous
+                    ne fassions pas application à un moment donné de l'une quelconque des dispositions de nos CGV, ne peut être interprété comme renonciation
+                    à nous prévaloir ultérieurement de cette condition.
+                - Commandes
+                - >
+                    Toute commande, même prise par nos représentants ou employés, ne nous engage définitivement qu'après confirmation écrite de notre part.
+                    En cas d'expédition partielle d'une commande, la confirmation ne vaut que pour les produits expédiés. Les conditions que nous accordons
+                    sont strictement réservées au destinataire tel qu'indiqué sur la commande et la confirmation de commande. Un minimum de commande de cinq
+                    cent euros (500€) est requis et nous nous nous réservons le droit de livrer + ou - 3 % de quantité de produits et de facturer ces produits.
+                    Sauf contre-indication, la validité des offres, faites en termes de prix et de conditions de règlements, est de 30 jours à compter de la
+                    date d'émission du devis. Par ailleurs, une commande acceptée par nos services engage l'acheteur au paiement intégral de cette dernière.
+                    A partir du 1er Janvier 2018, nous commercialiserons nos produits par unité logistique et non plus par unité de produit. Les conditionnements
+                    d'unités logistiques indiqués sur le tarif et catalogues doivent être respectés et aucune exception sauf accord préalablement donné par le
+                    biais d'une validation écrite ne sera acceptée.
+                - Modifications de produits
+                - >
+                    Nous nous réservons le droit d'apporter, à tout moment, toute modification que nous jugerons utile à nos produits et de modifier, sans avis
+                    préalable, les modèles définis dans nos prospectus et catalogues, sans obligation de modifier les produits précédemment livrés ou en cours
+                    de commande. Les modifications ainsi apportées ne peuvent donner lieu au versement de dommages-intérêts ou de pénalités.
+                - Livraisons
+                - >
+                    Nous sommes autorisés à procéder à des livraisons de façon globale ou partielle. Nos délais de livraison sont indiqués aussi exactement que
+                    possible. Les retards de livraison ne peuvent donner lieu à dommages-intérêts ou retenue sur facture, ni à annulation des commandes en cours.
+                    Toutefois, si un mois après une mise en demeure notifiée par l'acheteur par lettre recommandée avec avis de réception et restée infructueuse,
+                    les marchandises n'ont pas été livrées pour toute autre cause que la force majeure ou un cas assimilé à celle-ci, la vente pourra être résiliée
+                    pour non-exécution. Sont notamment assimilés à des cas de force majeure, nous déchargeant de notre obligation de livrer : l'émeute, le sinistre
+                    total ou partiel, l'intempérie, la guerre, le conflit collectif total ou partiel, l'accident, la difficulté de transport ou d'approvisionnement
+                    en matières premières ou produits, la décision administrative, judiciaire ou politique. La livraison dans les délais ne peut intervenir que si
+                    l'acheteur est à jour de toutes ses obligations envers nous, quelle qu'en soit la cause. Nos produits sont vendus départ usine, et réputés être
+                    délivrés à l'acquéreur dès leur mise à disposition du transporteur depuis nos locaux ou dès mise à disposition de l'acheteur, en ses locaux lorsque
+                    nous assurons le transport par nos propres véhicules. Les livraisons effectuées par un transporteur, même convenues franco de port et nonobstant
+                    la réserve de propriété ci-après, voyagent aux risques et périls de l'acheteur. Celui-ci doit notifier ses réserves auprès du transporteur conformément
+                    à l'article L. 133.3 du code de commerce de même qu'auprès de notre société à l'adresse figurant sur le devis ou la confirmation de commande par lettre
+                    recommandée avec avis de réception dans les 72 H à compter de la réception des produits, et en tout état de cause avant qu'ils ne soient utilisés ou
+                    revendus. Les réclamations concernant les vices cachés doivent nous être parvenues dans la même forme et le même délai précités à compter de leur
+                    découverte. Nous ne pouvons être responsables des défauts résultant d'un stockage anormal ou prolongé de nos produits ou encore d'une utilisation
+                    anormale ou défectueuse de ceux-ci. Dans tous les cas, il appartient à l'acquéreur d'apporter les justifications relatives à la réalité des anomalies
+                    ou vices constatés. Il doit aussi nous laisser toute facilité pour constater ceux-ci et y apporter remède le cas échéant. Il s'abstient d'intervenir
+                    ou de faire intervenir un tiers à cette fin.
+                - Retours
+                - >
+                    Aucun retour ne peut intervenir sans notre accord écrit et préalable, ce consentement n'impliquant aucune reconnaissance de responsabilité de notre part.
+                    Tout produit retourné sans notre accord serait tenu à la disposition de l'acheteur. Les frais et risques du retour sont toujours à la charge de l'acquéreur.
+                    En cas de reconnaissance de notre responsabilité, nous avons la faculté, à notre choix, soit de rembourser la marchandise, soit de procéder à l'échange
+                    des produits reconnus défectueux à l'exclusion de toute indemnité ou dommages-intérêts liés à un préjudice direct ou indirect. Aucun produit déjà utilisé
+                    par l'acquéreur ne donnera lieu à échange ou remboursement. Par ailleurs, les défauts ou détériorations provoqués par l'usure naturelle ou par un fait
+                    extérieur ou encore par une modification non effectuée par nous-mêmes, ne peuvent en aucun cas être pris en charge. En cas d'acceptation d'un retour produits,
+                    des frais de remise en stock correspondant à 20% de la valeur d'achat seront déduits de l'avoir. Ces frais pourront être levés à la discrétion de la société SASA.
+                - Prix
+                - >
+                    Nos prix s'entendent transport non compris. Les prix sont fournis au prix en vigueur au jour de la confirmation de la commande. Nos prix s'entendent
+                    hors taxes départ usine. Tout impôt, droit, taxe ou autre prestation à payer en vertu d'un règlement français, international ou d'un pays importateur
+                    ou de transit, est à la charge de l'acquéreur. Les factures sont payables dans un délai de 30 jours à compter de la date d'émission de la facture sauf
+                    exception, par chèque bancaire, virement bancaire, prélèvement bancaire, carte bancaire ou encore crédit ou remise documentaire. Sauf convention
+                    contraire avec l'acheteur, toute première commande est payable par avance dans son intégralité. Au-delà, le paiement doit être effectué selon les
+                    indications portées sur notre facture. Aucun escompte pour paiement anticipé n'est accordé. Les réclamations concernant la facturation doivent nous
+                    être parvenues par lettre recommandée avec avis de réception dans les trois jours à compter de la date de réception de nos factures en mentionnant
+                    clairement les dates et numéros des factures concernées. En cas de retard de paiement, nous pouvons suspendre toutes les commandes en cours, sans
+                    préjudice de toute autre voie d'action. Toute somme non payée à l'échéance prévue donne lieu de plein droit et sans mise en demeure préalable, conformément
+                    à l'article L. 441-6, du code de commerce au paiement des pénalités de retard égales à 3 fois le taux d'intérêt légal en vigueur. Ces pénalités de retard
+                    sont exigibles le jour suivant la date de règlement figurant sur la facture sans qu'un rappel soit nécessaire. Le défaut de paiement à échéance entraîne
+                    l'exigibilité immédiate de toutes sommes restant dues, quel que soit le mode de règlement prévu et les factures concernées. Toute facture recouvrée par
+                    service contentieux est majorée, d'une indemnité fixée forfaitairement à 20 % hors taxe de son montant, sans préjudice du remboursement des frais
+                    d'impayé et de recouvrement judiciaire. En aucun cas, les paiements ne peuvent faire l'objet d'une quelconque compensation sans notre accord écrit et
+                    préalable. Nous avons le droit de demander des garanties de solvabilité même en cours d'exécution d'une commande. Lorsque nous avons des doutes sérieux
+                    quant à la solvabilité de l'acheteur ou lorsque l'acheteur s'abstient de fournir les garanties demandées, nous avons le droit d'exiger le paiement préalable
+                    de toute livraison et/ou de suspendre la livraison des marchandises.
+                - Réserve de propriété
+                - >
+                    Le transfert de propriété des produits vendus est subordonné au paiement intégral par l'acheteur du prix et de ses accessoires (frais, intérêts, etc.)
+                    (loi 85-98 du 25 janvier 1985, article 121). Le paiement est réalisé par l'encaissement effectif de l'intégralité du prix, la remise de tout titre créant
+                    une obligation de payer ne constituant pas un paiement. Dans le cas où le paiement n'interviendrait pas dans le délai prévu, nous nous réservons le droit
+                    de reprendre les produits livrés et, si bon nous semble, de résoudre les ventes correspondantes. La restitution des produits est faite en nos locaux dès
+                    notre revendication par lettre recommandée avec accusé de réception, aux frais, risques et péril de l'acheteur. Nous sommes autorisés à faire dresser
+                    unilatéralement un inventaire des produits impayés. L'acheteur supporte tous les frais et honoraires occasionnés par la revendication, l'inventaire et
+                    la reprise des produits. L'acheteur veille à ce que l'identification des produits soit toujours maintenue. Les produits en stock sont présumés être impayés.
+                    L'acheteur est redevable d'une indemnité de dévalorisation fixée à 15 % HT des produits impayés par mois ou fractions de mois de détention, depuis la livraison
+                    jusqu'à la restitution. En cas de saisie-arrêt ou de toute autre intervention d'un tiers sur les marchandises, l'acheteur devra impérativement nous en informer
+                    sans délai afin de nous permettre de nous y opposer et de préserver nos droits. L'acheteur s'interdit en outre de donner en gage les marchandises, de les
+                    revendre ou de céder à titre de garantie la propriété des marchandises avant le transfert de propriété défini ci-dessus. L'acheteur devra faire assurer
+                    les produits vendus sous réserve de propriété en cas de pertes, dégâts ou vols et nous prévenir de toute mesure prise par un tiers sur les produits saisis
+                    ou autre). En cas de reprise des marchandises, les acomptes versés par l'acheteur nous resteront acquis définitivement.
+                - Attribution de juridiction – Lois applicables
+                - >
+                    Les présentes conditions générales de vente sont soumises au droit français. Sont seuls compétents, en cas de litige de toute nature, les tribunaux de
+                    notre siège social. En cas de transaction internationale, le droit français et la langue française sont seuls applicables et les tribunaux de notre siège
+                    social sont seuls compétents.
+            information: |
+                SASA : RCS Douai 311 831 457
+                SIRET : 311 831 457 00057 - TVA FR 96 311 831 457
+        demarle: 
+            title: Conditions Générales de Vente Demarle
+            description: Découvrez les Conditions Générales de Vente de Demarle.
+            data:
+                - Application et opposabilité des Conditions Générales de Vente (CGV)
+                - >
+                    Le fait de passer commande implique l'adhésion entière et sans réserve de l'acheteur à nos conditions générales de vente. Aucune condition
+                    ne peut, sauf acceptation expresse et écrite de notre part, prévaloir sur nos CGV. Toute condition contraire posée par l'acheteur est, à
+                    défaut de notre acceptation expresse, inopposable à notre société, quel que soit le moment où elle peut être portée à notre connaissance,
+                    même si elle figure dans les conditions générales d'achat de l'acquéreur. Le fait que nous ne fassions pas application à un moment donnée de
+                    l'une quelconque des dispositions de nos CGV, ne peut être interprété comme renonciation nous prévaloir ultérieurement de cette condition.
+                - Commandes
+                - >
+                    Toute commande, même prise par nos représentants ou employés, ne nous engage définitivement qu'après confirmation écrite de notre part.
+                    En cas d'expédition partielle d'une commande, la confirmation ne vaut que pour les produits expédiés. Les conditions que nous accordons
+                    sont strictement réservées au destinataire tel qu'indiqué sur la commande et la confirmation de commande. Nous nous réservons le droit de
+                    demander des quantités minimum de vente, de livrer + ou – 3 % de quantité de produits et de facturer ces produits. Sauf contre-indication,
+                    la validité des offres, faites en termes de prix et de conditions de règlements, est de 30 jours à compter de la date d'émission du devis.
+                    Par ailleurs, une commande acceptée par nos services engage l'acheteur au paiement intégral de cette dernière.
+                - Modifications de produits
+                - >
+                    Nous nous réservons le droit d'apporter, à tout moment, toute modification que nous jugerons utile à nos produits et de modifier, sans avis
+                    préalable, les modèles définis dans nos prospectus et catalogues, sans obligation de modifier les produits précédemment livrés ou en cours
+                    de commande. Les modifications ainsi apportées ne peuvent donner lieu au versement de dommages-intérêts ou de pénalités.
+                - Livraisons
+                - >
+                    Nous sommes autorisés à procéder à des livraisons de façon globale ou partielle. Nos délais de livraison sont indiqués aussi exactement que
+                    possible. Les retards de livraison ne peuvent donner lieu à dommages-intérêts ou retenue sur facture, ni à annulation des commandes en cours.
+                    Toutefois, si un mois après une mise en demeure notifiée par l'acheteur par lettre recommandée avec avis de réception et restée infructueuse,
+                    les marchandises n'ont pas été livrées pour toute autre cause que la force majeure ou un cas assimilé à celle-ci, la vente pourra être résiliée
+                    pour non-exécution. Sont notamment assimilés à des cas de force majeure, nous déchargeant de notre obligation de livrer : l'émeute, le sinistre
+                    total ou partiel, l'intempérie, la guerre, le conflit collectif total ou partiel, l'accident, la difficulté de transport ou d'approvisionnement
+                    en matière premières ou produits, la décision administrative, judiciaire ou politique. La livraison dans les délais ne peut intervenir que si
+                    l'acheteur est à jour de toutes ses obligations envers nous, quelle qu'en soit la cause. Nos produits sont vendus départ usine, et réputés être
+                    délivrés à l'acquéreur dès leur mise à disposition du transporteur depuis nos locaux ou dès mise à disposition de l'acheteur, en ses locaux
+                    lorsque nous assurons le transport par nos propres véhicules. Les livraisons effectuées par un transporteur, même convenues franco de port
+                    et nonobstant la réserve de propriété ci-après, voyagent aux risques et périls de l'acheteur. Celui-ci doit notifier ses réserves auprès du
+                    transporteur conformément à l'article L 133.3 du code du commerce de même qu'auprès de notre société à l'adresse figurant sur le devis ou la
+                    confirmation de commande par lettre recommandée avec avis de réception dans les 72h à compter de la réception des produits, et en tout état
+                    de cause avant qu'ils ne soient utilisés ou revendus. Les réclamations concernant les vices cachés doivent nous être parvenues dans la même
+                    forme et le même délai précités à compter de leur découverte. Nous ne pouvons être responsables des défauts résultant d'un stockage anormal
+                    ou prolongé de nos produits ou encore d'une utilisation anormale ou défectueuse de ceux-ci. Dans tous les cas, il appartient à l'acquéreur
+                    d'apporter les justifications relatives à la réalité des anomalies ou vices constatés. Il doit aussi nous laisser toute facilité pour constater
+                    ceux-ci et y apporter remède le cas échéant. Il s'abstient d'intervenir ou de faire intervenir un tiers à cette fin.
+                - Retours
+                - >
+                    Aucun retour ne peut intervenir sans notre accord écrit et préalable, ce consentement n'impliquant aucune reconnaissance de responsabilité de
+                    notre part. Tout produit retourné sans notre accord serait tenu à la disposition de l'acheteur. Les frais et risques du retour sont toujours
+                    à la charge de l'acquéreur. En cas de reconnaissance de notre responsabilité, nous avons la faculté, à notre choix, soit de rembourser la
+                    marchandise, soit de procéder à l'échange des produits reconnus défectueux à l'exclusion de toute indemnité ou dommages-intérêts liés à un
+                    préjudice direct ou indirect. Aucun produit déjà utilisé par l'acquéreur ne donnera lieu à échange ou remboursement. Par ailleurs, les défaults
+                    ou détériorations provoqués par l'usure naturelle ou par un fait extérieur ou encore par une modification non effectuée par nous-mêmes, ne
+                    peuvent en aucun cas être pris en charge.
+                - Prix
+                - >
+                    Nos prix s'entendent transport non compris. Les prix sont fournis au prix en vigueur au jour de la confirmation de la commande. Nos prix s'entendent
+                    hors taxes départ usine. Tout impôt, droit, taxe ou autre prestation à payer en vertu d'un règlement français, international ou d'un pays importateur
+                    ou de transit, est à la charge de l'acquéreur. Les factures sont payables dans un délai de 30 jours à compter de la date d'émission de la facture
+                    sauf exception, par chèque bancaire, virement bancaire, prélèvement bancaire, carte bancaire ou encore crédit ou remise documentaire. Sauf convention
+                    contraire avec l'acheteur, toute première commande est payable par avance dans son intégralité. Au-delà, le paiement doit être effectué selon les
+                    indications portées sur notre facture. Aucun escompte pour paiement anticipé n'est accordé. Les réclamations concernant la facturation doivent nous
+                    être parvenues par lettre recommandée avec avis de réception dans les trois jours à compter de la date de réception de nos factures en mentionnant
+                    clairement les dates et numéros des factures concernées. En cas de retard de paiement, nous pouvons suspendre toutes les commandes en cours, sans
+                    préjudice de toute autre voie d'action. Toute somme non payée à l'échéance prévue donne lieu de plein droit et sans mise en demeure préalable,
+                    conformément à l'article L- 441-6 du code de commerce au paiement des pénalités de retard égales à 3 fois le taux d'intérêt légal en vigueur et
+                    d'une indemnité forfaitaire pour frais de recouvrement, dont le montant est fixé par décret. Si les frais de recouvrement réels sont supérieurs
+                    à cette indemnité forfaitaire, une indemnisation complémentaire pourra être réclamée (sur justification). Ces pénalités de retard sont exigibles
+                    le jour suivant la date de règlement figurant sur la facture sans qu'un rappel soit nécessaire. Le défaut de paiement à échéance entraîne l'exigibilité
+                    immédiate de toutes sommes restant dues, quel que soit le mode de règlement prévu et les factures concernées. Toute facture recouvrée par service
+                    contentieux est majorée, d'une indemnité fixée forfaitairement à 20 % hors taxe de son montant, sans préjudice du remboursement des frais d'impayé
+                    et de recouvrement judiciaire. En aucun cas, les paiements ne peuvent faire l'objet d'une quelconque compensation sans notre accord écrit et préalable.
+                    Nous avons le droit de demander des garanties de solvabilité même en cours d'exécution d'une commande. Lorsque nous avons des doutes sérieux quant à la
+                    solvabilité de l'acheteur ou lorsque l'acheteur s'abstient de fournir les garanties demandées, nous avons le droit d'exiger le paiement préalable de toute
+                    livraison et/ou de suspendre la livraison des marchandises.
+                - Réserve de propriété
+                - >
+                    Le transfert de propriété des produits vendus est subordonné au paiement intégral par l'acheteur du prix et de ses accessoires (frais, intérêts, etc...).
+                    Le paiement est réalisé par l'encaissement effectif de l'intégralité du prix, la remise de tout titre créant une obligation de payer ne constituant par un
+                    paiement. Dans le cas où le paiement n'interviendrait pas dans le délai prévu, nous nous réservons le droit de reprendre les produits livrés et, si bon
+                    nous semble, de résoudre les ventes correspondantes. La restitution des produits est faite en nos locaux dès notre revendication par lettre recommandée
+                    avec accusé de réception, aux frais, risques et péril de l'acheteur. Nous sommes autorisés à faire dresser unilatéralement un inventaire des produits impayés.
+                    L'acheteur supporte tous les frais et honoraires occasionnés par la revendication, l'inventaire et la reprise des produits. L'acheteur veille à ce que
+                    l'identification des produits soit toujours maintenue. Les produits en stock sont présumés être impayés. L'acheteur est redevable d'une indemnité de
+                    dévalorisation fixée à 15 % HT des produits impayés par mois ou fractions de mois de détention, depuis la livraison jusqu'à la restitution. En cas de
+                    saisie-arrêt ou de toute autre intervention d'un tiers sur les marchandises, l'acheteur devra impérativement nous en informer sans délai afin de nous
+                    permettre de nous y opposer et de préserver nos droits. L'acheteur s'interdit en outre de donner en gage les marchandises, de les revendre ou de céder à
+                    titre de garantie la propriété des marchandises avant le transfert de propriété défini ci-dessus. L'acheteur devra faire assurer les produits vendus sous
+                    réserve de propriété en cas de pertes, dégâts ou vols et nous prévenir de toute mesure prise par un tiers sur les produits saisie ou autre. En cas de
+                    reprise des marchandises, les acomptes versés par l'acheteur nous resteront acquis définitivement.
+                - Attribution de juridiction – Lois applicables
+                - >
+                    Les présentes conditions générales de vente sont soumises au droit français. Sont seuls compétents, en cas de litige de toute nature, les tribunaux de notre
+                    siège social. En cas de transaction internationale, le droit français et la langue française sont seuls applicables et les tribunaux de notre siège social
+                    sont seuls compétents.
+            information: |
+                DEMARLE : RCS Lille 950 080 465
+                SIRET : 950 080 465 00046- TVA FR 03 950 080 465
+        privacy: 
+            title: Confidentialité
+            description: Confidentialité.
+            data:
+                - Application et opposabilité des Conditions Générales de Vente (CGV)
+                - >
+                    Le fait de passer commande implique l'adhésion entière et sans réserve de l'acheteur à nos conditions générales de vente. Aucune condition
+                    ne peut, sauf acceptation expresse et écrite de notre part, prévaloir sur nos CGV. Toute condition contraire posée par l'acheteur est, à
+                    défaut de notre acceptation expresse, inopposable à notre société, quel que soit le moment où elle peut être portée à notre connaissance,
+                    même si elle figure dans les conditions générales d'achat de l'acquéreur. Le fait que nous ne fassions pas application à un moment donnée de
+                    l'une quelconque des dispositions de nos CGV, ne peut être interprété comme renonciation nous prévaloir ultérieurement de cette condition.
+                - Commandes
+                - >
+                    Toute commande, même prise par nos représentants ou employés, ne nous engage définitivement qu'après confirmation écrite de notre part.
+                    En cas d'expédition partielle d'une commande, la confirmation ne vaut que pour les produits expédiés. Les conditions que nous accordons
+                    sont strictement réservées au destinataire tel qu'indiqué sur la commande et la confirmation de commande. Nous nous réservons le droit de
+                    demander des quantités minimum de vente, de livrer + ou – 3 % de quantité de produits et de facturer ces produits. Sauf contre-indication,
+                    la validité des offres, faites en termes de prix et de conditions de règlements, est de 30 jours à compter de la date d'émission du devis.
+                    Par ailleurs, une commande acceptée par nos services engage l'acheteur au paiement intégral de cette dernière.
+                - Modifications de produits
+                - >
+                    Nous nous réservons le droit d'apporter, à tout moment, toute modification que nous jugerons utile à nos produits et de modifier, sans avis
+                    préalable, les modèles définis dans nos prospectus et catalogues, sans obligation de modifier les produits précédemment livrés ou en cours
+                    de commande. Les modifications ainsi apportées ne peuvent donner lieu au versement de dommages-intérêts ou de pénalités.
+                - Livraisons
+                - >
+                    Nous sommes autorisés à procéder à des livraisons de façon globale ou partielle. Nos délais de livraison sont indiqués aussi exactement que
+                    possible. Les retards de livraison ne peuvent donner lieu à dommages-intérêts ou retenue sur facture, ni à annulation des commandes en cours.
+                    Toutefois, si un mois après une mise en demeure notifiée par l'acheteur par lettre recommandée avec avis de réception et restée infructueuse,
+                    les marchandises n'ont pas été livrées pour toute autre cause que la force majeure ou un cas assimilé à celle-ci, la vente pourra être résiliée
+                    pour non-exécution. Sont notamment assimilés à des cas de force majeure, nous déchargeant de notre obligation de livrer : l'émeute, le sinistre
+                    total ou partiel, l'intempérie, la guerre, le conflit collectif total ou partiel, l'accident, la difficulté de transport ou d'approvisionnement
+                    en matière premières ou produits, la décision administrative, judiciaire ou politique. La livraison dans les délais ne peut intervenir que si
+                    l'acheteur est à jour de toutes ses obligations envers nous, quelle qu'en soit la cause. Nos produits sont vendus départ usine, et réputés être
+                    délivrés à l'acquéreur dès leur mise à disposition du transporteur depuis nos locaux ou dès mise à disposition de l'acheteur, en ses locaux
+                    lorsque nous assurons le transport par nos propres véhicules. Les livraisons effectuées par un transporteur, même convenues franco de port
+                    et nonobstant la réserve de propriété ci-après, voyagent aux risques et périls de l'acheteur. Celui-ci doit notifier ses réserves auprès du
+                    transporteur conformément à l'article L 133.3 du code du commerce de même qu'auprès de notre société à l'adresse figurant sur le devis ou la
+                    confirmation de commande par lettre recommandée avec avis de réception dans les 72h à compter de la réception des produits, et en tout état
+                    de cause avant qu'ils ne soient utilisés ou revendus. Les réclamations concernant les vices cachés doivent nous être parvenues dans la même
+                    forme et le même délai précités à compter de leur découverte. Nous ne pouvons être responsables des défauts résultant d'un stockage anormal
+                    ou prolongé de nos produits ou encore d'une utilisation anormale ou défectueuse de ceux-ci. Dans tous les cas, il appartient à l'acquéreur
+                    d'apporter les justifications relatives à la réalité des anomalies ou vices constatés. Il doit aussi nous laisser toute facilité pour constater
+                    ceux-ci et y apporter remède le cas échéant. Il s'abstient d'intervenir ou de faire intervenir un tiers à cette fin.
+                - Retours
+                - >
+                    Aucun retour ne peut intervenir sans notre accord écrit et préalable, ce consentement n'impliquant aucune reconnaissance de responsabilité de
+                    notre part. Tout produit retourné sans notre accord serait tenu à la disposition de l'acheteur. Les frais et risques du retour sont toujours
+                    à la charge de l'acquéreur. En cas de reconnaissance de notre responsabilité, nous avons la faculté, à notre choix, soit de rembourser la
+                    marchandise, soit de procéder à l'échange des produits reconnus défectueux à l'exclusion de toute indemnité ou dommages-intérêts liés à un
+                    préjudice direct ou indirect. Aucun produit déjà utilisé par l'acquéreur ne donnera lieu à échange ou remboursement. Par ailleurs, les défaults
+                    ou détériorations provoqués par l'usure naturelle ou par un fait extérieur ou encore par une modification non effectuée par nous-mêmes, ne
+                    peuvent en aucun cas être pris en charge.
+                - Prix
+                - >
+                    Nos prix s'entendent transport non compris. Les prix sont fournis au prix en vigueur au jour de la confirmation de la commande. Nos prix s'entendent
+                    hors taxes départ usine. Tout impôt, droit, taxe ou autre prestation à payer en vertu d'un règlement français, international ou d'un pays importateur
+                    ou de transit, est à la charge de l'acquéreur. Les factures sont payables dans un délai de 30 jours à compter de la date d'émission de la facture
+                    sauf exception, par chèque bancaire, virement bancaire, prélèvement bancaire, carte bancaire ou encore crédit ou remise documentaire. Sauf convention
+                    contraire avec l'acheteur, toute première commande est payable par avance dans son intégralité. Au-delà, le paiement doit être effectué selon les
+                    indications portées sur notre facture. Aucun escompte pour paiement anticipé n'est accordé. Les réclamations concernant la facturation doivent nous
+                    être parvenues par lettre recommandée avec avis de réception dans les trois jours à compter de la date de réception de nos factures en mentionnant
+                    clairement les dates et numéros des factures concernées. En cas de retard de paiement, nous pouvons suspendre toutes les commandes en cours, sans
+                    préjudice de toute autre voie d'action. Toute somme non payée à l'échéance prévue donne lieu de plein droit et sans mise en demeure préalable,
+                    conformément à l'article L- 441-6 du code de commerce au paiement des pénalités de retard égales à 3 fois le taux d'intérêt légal en vigueur et
+                    d'une indemnité forfaitaire pour frais de recouvrement, dont le montant est fixé par décret. Si les frais de recouvrement réels sont supérieurs
+                    à cette indemnité forfaitaire, une indemnisation complémentaire pourra être réclamée (sur justification). Ces pénalités de retard sont exigibles
+                    le jour suivant la date de règlement figurant sur la facture sans qu'un rappel soit nécessaire. Le défaut de paiement à échéance entraîne l'exigibilité
+                    immédiate de toutes sommes restant dues, quel que soit le mode de règlement prévu et les factures concernées. Toute facture recouvrée par service
+                    contentieux est majorée, d'une indemnité fixée forfaitairement à 20 % hors taxe de son montant, sans préjudice du remboursement des frais d'impayé
+                    et de recouvrement judiciaire. En aucun cas, les paiements ne peuvent faire l'objet d'une quelconque compensation sans notre accord écrit et préalable.
+                    Nous avons le droit de demander des garanties de solvabilité même en cours d'exécution d'une commande. Lorsque nous avons des doutes sérieux quant à la
+                    solvabilité de l'acheteur ou lorsque l'acheteur s'abstient de fournir les garanties demandées, nous avons le droit d'exiger le paiement préalable de toute
+                    livraison et/ou de suspendre la livraison des marchandises.
+                - Réserve de propriété
+                - >
+                    Le transfert de propriété des produits vendus est subordonné au paiement intégral par l'acheteur du prix et de ses accessoires (frais, intérêts, etc...).
+                    Le paiement est réalisé par l'encaissement effectif de l'intégralité du prix, la remise de tout titre créant une obligation de payer ne constituant par un
+                    paiement. Dans le cas où le paiement n'interviendrait pas dans le délai prévu, nous nous réservons le droit de reprendre les produits livrés et, si bon
+                    nous semble, de résoudre les ventes correspondantes. La restitution des produits est faite en nos locaux dès notre revendication par lettre recommandée
+                    avec accusé de réception, aux frais, risques et péril de l'acheteur. Nous sommes autorisés à faire dresser unilatéralement un inventaire des produits impayés.
+                    L'acheteur supporte tous les frais et honoraires occasionnés par la revendication, l'inventaire et la reprise des produits. L'acheteur veille à ce que
+                    l'identification des produits soit toujours maintenue. Les produits en stock sont présumés être impayés. L'acheteur est redevable d'une indemnité de
+                    dévalorisation fixée à 15 % HT des produits impayés par mois ou fractions de mois de détention, depuis la livraison jusqu'à la restitution. En cas de
+                    saisie-arrêt ou de toute autre intervention d'un tiers sur les marchandises, l'acheteur devra impérativement nous en informer sans délai afin de nous
+                    permettre de nous y opposer et de préserver nos droits. L'acheteur s'interdit en outre de donner en gage les marchandises, de les revendre ou de céder à
+                    titre de garantie la propriété des marchandises avant le transfert de propriété défini ci-dessus. L'acheteur devra faire assurer les produits vendus sous
+                    réserve de propriété en cas de pertes, dégâts ou vols et nous prévenir de toute mesure prise par un tiers sur les produits saisie ou autre. En cas de
+                    reprise des marchandises, les acomptes versés par l'acheteur nous resteront acquis définitivement.
+                - Attribution de juridiction – Lois applicables
+                - >
+                    Les présentes conditions générales de vente sont soumises au droit français. Sont seuls compétents, en cas de litige de toute nature, les tribunaux de notre
+                    siège social. En cas de transaction internationale, le droit français et la langue française sont seuls applicables et les tribunaux de notre siège social
+                    sont seuls compétents.
+            information: |
+                DEMARLE : RCS Lille 950 080 465
+                SIRET : 950 080 465 00046- TVA FR 03 950 080 465

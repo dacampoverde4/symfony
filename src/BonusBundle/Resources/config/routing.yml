@@ -1,0 +1,11 @@
+bonus_video:
+    path:     /videos
+    defaults: { _controller: BonusBundle:Public:video }
+
+bonus_event:
+    path:     /evenements
+    defaults: { _controller: BonusBundle:Public:event }
+
+bonus_technical_notice:
+    path:     /notices-techniques
+    defaults: { _controller: BonusBundle:Public:technicalNotice }

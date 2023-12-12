@@ -1,0 +1,376 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'all.contact_us'|trans }} - {{ parent() }}{% endblock %}
+
+{% block description %}{{ 'contact_us.description'|trans }}{% endblock %}
+
+{% block body %}
+		<section id="general">
+			<div class="container">
+		{% for label, messages in app.flashes %}
+			{% for message in messages %}
+				<div class="alert alert-{{ label }} alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					{{ message|trans }}
+				</div>
+			{% endfor %}
+		{% endfor %}
+
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>{{ 'all.contact_us'|trans }}</h2>
+						<hr class="star-light">
+					</div>
+				</div>
+
+				{{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+					{{ form_errors(form) }}
+
+					<div class="form-group form-group-lg{% if form.purpose.vars.errors|length > 0 %} has-error has-danger{% endif %}" id="field-not-deactivable">
+						{{ form_label(form.purpose, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+								{{ form_widget(form.purpose, {'attr': {'class': 'form-control', 'autofocus': true}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.purpose) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.company.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.company, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								{{ form_widget(form.company, {'attr': {'placeholder': form.company.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.company) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.activity.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.activity, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+								{{ form_widget(form.activity, {'attr': {'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.activity) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.gender.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.gender, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4" style="padding-top:4px;">
+							{% for child in form.gender %}
+							<div class="radio">
+								<label>
+									{{ form_widget(child) }}
+									<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+									{{ child.vars.label }}
+								</label>
+							</div>
+							{% endfor %}
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.gender) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.lastName.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.lastName, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								{{ form_widget(form.lastName, {'attr': {'placeholder': form.lastName.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.lastName) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.firstName.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.firstName, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								{{ form_widget(form.firstName, {'attr': {'placeholder': form.firstName.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.firstName) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.email.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.email, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+								{{ form_widget(form.email, {'attr': {'placeholder': form.email.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.email) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.phone.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.phone, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+								{{ form_widget(form.phone, {'attr': {'placeholder': form.phone.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.phone) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.address.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.address, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+								{{ form_widget(form.address, {'attr': {'placeholder': form.address.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.address) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.city.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.city, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+								{{ form_widget(form.city, {'attr': {'placeholder': form.city.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.city) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.zipCode.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.zipCode, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+								{{ form_widget(form.zipCode, {'attr': {'placeholder': form.zipCode.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.zipCode) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.country.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.country, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+								{{ form_widget(form.country, {'attr': {'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.country) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.productTypes.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.productTypes, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-5" style="padding-top:4px;">
+							{% for child in form.productTypes %}
+							<div class="checkbox">
+								<label>
+								{% if loop.index0 < 1 %}
+									{{ form_widget(child, {'attr': {'required': true}}) }}
+								{% else %}
+									{{ form_widget(child) }}
+								{% endif %}
+									<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									{{ child.vars.label }}
+								</label>
+							</div>
+							{% endfor %}
+						</div>
+						<div class="col-md-3 validation-errors">
+							{{ form_errors(form.productTypes) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.promotionsNews.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.promotionsNews, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4" style="padding-top:4px;">
+							{% for child in form.promotionsNews %}
+							<div class="radio">
+								<label>
+									{{ form_widget(child) }}
+									<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+									{{ child.vars.label|trans }}
+								</label>
+							</div>
+							{% endfor %}
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.promotionsNews) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.message.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.message, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-5">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+								{{ form_widget(form.message, {'attr': {'placeholder': form.message.vars.label, 'class': 'form-control', 'rows': '4'}}) }}
+							</div>
+						</div>
+						<div class="col-md-3 validation-errors">
+							{{ form_errors(form.message) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.fileName1.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.fileName1, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
+								{{ form_widget(form.fileName1, {'attr': {'placeholder': form.fileName1.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.fileName1) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.filePath1.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.filePath1, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-5">
+							<div class="input-group">
+								<input type="text" class="form-control file-title" disabled>
+								<div class="input-group-btn">
+									<div class="btn btn-default btn-lg file-input">
+										{{ 'contact_us.browse'|trans }}
+										{{ form_widget(form.filePath1) }}
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 validation-errors">
+							{{ form_errors(form.filePath1) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.fileName2.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.fileName2, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-4">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
+								{{ form_widget(form.fileName2, {'attr': {'placeholder': form.fileName2.vars.label, 'class': 'form-control'}}) }}
+							</div>
+						</div>
+						<div class="col-md-4 validation-errors">
+							{{ form_errors(form.fileName2) }}
+						</div>
+					</div>
+
+					<div class="form-group form-group-lg{% if form.filePath2.vars.errors|length > 0 %} has-error has-danger{% endif %}">
+						{{ form_label(form.filePath2, null, {'label_attr': {'class': 'col-md-4 control-label'}}) }}
+						<div class="col-md-5">
+							<div class="input-group">
+								<input type="text" class="form-control file-title" disabled>
+								<div class="input-group-btn">
+									<div class="btn btn-default btn-lg file-input">
+										{{ 'contact_us.browse'|trans }}
+										{{ form_widget(form.filePath2) }}
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 validation-errors">
+							{{ form_errors(form.filePath2) }}
+						</div>
+					</div>
+					{{ form_widget(form.recaptcha) }}
+					{{ form_rest(form) }}
+					<br>
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							<a href="{{ path('app_terms_of_sales_sasa') }}">{{ 'contact_us.privacy'|trans }}</a>
+						</div>
+					</div>
+					<br>
+					<div class="text-center">
+						<button type="submit" class="btn btn-primary btn-lg">{{ 'contact_us.send'|trans }} <span class="glyphicon glyphicon-send"></span></button>
+					</div>
+				{{ form_end(form) }}
+			</div>
+		</section>
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+<script src="{{ asset('js/jquery.validate.min.js') }}"></script>
+<script src="{{ asset('js/localization/jquery.validate.messages_'~app.request.getLocale()~'.min.js') }}"></script>
+<script>
+	var onSubmit = function() {
+		document.getElementsByName('{{ form.vars.name }}')[0].submit();
+	};
+
+	$(function() {
+		'use strict';
+
+		var fields = JSON.parse('{{ fields|json_encode()|raw }}');
+
+		$('#{{ form.purpose.vars.id }}').change(function() {
+			var purpose = $(this).val();
+			var initAccessible = (purpose in fields);
+
+			$('.form-group:not(#field-not-deactivable)').each(function() {
+				var accessible = initAccessible;
+
+				$(this).find('input:not(.file-title),select,textarea').each(function() {
+					if(accessible && $(this).attr('name') in fields[purpose]) {
+						accessible = fields[purpose][$(this).attr('name')];
+					}
+
+					$(this).prop('disabled', !accessible);
+				});
+
+				$(this).fadeTo(400, (accessible ? 1.0 : 0.4));
+			});
+		});
+
+		$('#{{ form.purpose.vars.id }}').change();
+
+		$('.file-input input:file').change(function (){
+			if(this.files.length > 0) {
+				$(this).closest('.input-group').children('.file-title').val(this.files[0].name);
+			}
+		});
+
+		$('form[name="{{ form.vars.name }}"]').validate({
+			submitHandler: function() {
+				if(! grecaptcha.getResponse()) {
+					grecaptcha.execute();
+				}
+			},
+			messages: {
+				'{{ form.productTypes.vars.full_name }}[]': {
+					required: '{{ 'contact_us.product_types_not_blank'|trans }}'
+				}
+			}
+		});
+	});
+</script>
+{% endblock %}

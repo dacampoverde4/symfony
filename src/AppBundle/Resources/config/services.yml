@@ -1,0 +1,13 @@
+services:
+    app.twig.country_extension:
+        class: AppBundle\Twig\CountryExtension
+        tags:
+            - { name: twig.extension }
+    app.twig.intl_extension:
+        class: AppBundle\Twig\IntlExtension
+        tags:
+            - { name: twig.extension }
+    app.twig.time_extension:
+        class: AppBundle\Twig\TimeExtension
+        tags:
+            - { name: twig.extension }

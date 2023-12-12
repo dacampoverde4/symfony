@@ -1,0 +1,15 @@
+app_homepage:
+    path:     /
+    defaults: { _controller: AppBundle:App:index }
+
+app_terms_of_sales_sasa:
+    path:     /confidentialite
+    defaults: { _controller: AppBundle:App:privacy }
+
+app_terms_of_sales_demarle:
+    path:     /conditions-generales-de-vente-demarle
+    defaults: { _controller: AppBundle:App:termsOfSalesDemarle }
+
+app_photos_catalog:
+    path:     /conditions-generales-de-vente-sasa
+    defaults: { _controller: AppBundle:App:termsOfSalesSasa }

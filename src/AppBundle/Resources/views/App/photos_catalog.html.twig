@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'app.photos_catalog'|trans }} - {{ parent() }}{% endblock %}
+
+{% block body %}
+		<section id="general">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>{{ 'app.photos_catalog'|trans }}</h2>
+						<hr class="star-light">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<p><a href="{{ asset('downloads/photos-catalog.zip') }}">{{ 'app.photos_catalog_text'|trans }}</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+{% endblock %}

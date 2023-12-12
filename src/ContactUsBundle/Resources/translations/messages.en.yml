@@ -1,0 +1,35 @@
+contact_us:
+    description: Contact form to contact the Sasa Demarle Group team.
+    db:
+        purpose: I would like to...
+        company: Company
+        activity: Activity
+        gender: Gender
+        last_name: Last name
+        first_name: First name
+        email: E-Mail
+        phone: Phone
+        address: Address
+        city: City
+        zip_code: ZIP code
+        country: Country
+        product_types: Type of product I am interested in
+        promotions_news: I want to be informed about your promotions and new products
+        language: Language
+        message: Message
+        file_name_1: File 1 description
+        file_name_2: File 2 description
+        file_path_1: Attachment 1
+        file_path_2: Attachment 2
+    select: Choose...
+    send: Send
+    privacy: Privacy
+    yes: Yes
+    no: No
+    browse: Browse...
+    product_types_not_blank: Please select at least one option.
+    flash:
+        add_contact_success: The contact request has been successfully registered.
+        errors_in_form: Please check the fields with errors.
+    email:
+        new_contact: A new contact request has been created by a user, here is the information

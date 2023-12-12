@@ -1,0 +1,305 @@
+app:
+    description: Groupe Sasa Demarle is the world leader in the design and manufacturing of baking trays mainly for professional and industrial bakers and pastry Chefs.
+    previous_slide: Previous
+    next_slide: Next
+    discover_flexipan: Discover the new face of Flexipan®...
+    discover_sasa: Discover the new face of Sasa...
+    learn_more: Learn more...
+    watch_the_video: Watch the video
+    contact: Contact
+    customer_service: Customer Service
+    rgpd_ok_1: Your subscription has been taken into account!
+    rgpd_ok_2: |
+        You've changed your mind? No problem!
+        Contact us at %link_start%service.marketing@sasa-demarle.com%link_end%
+    rgpd_ko_1: Your unsubscription has been taken into account!
+    rgpd_ko_2: |
+        You can renew at any time by contacting us at %link_start%service.marketing@sasa-demarle.com%link_end%
+    rgpd_button: Continue
+    the_group_paragraph_1: "Groupe Sasa Demarle is the world leader in the design and manufacturing of baking trays mainly for professional and industrial bakers and pastry Chefs."
+    the_group_paragraph_2: "For more than 30 years, the group has developed and innovated the non-stick coatings of its products; baking sheets and nets, trolleys, flexible molds and baking mats."
+    our_sales_force: Our sales force
+    map_distribution: Distribution sales force map
+    map_industry: Industry sales force map
+    distribution_customers: Distribution customers
+    industry_customers: Industry customers
+    click_to_browse: Click to browse the map
+    sasa_demarle_catalog: Sasa Demarle catalog
+    sasa_demarle_logo: Sasa Demarle logo
+    click_view_catalog: |
+        Click on the image above to see our new catalog
+        or download it as a PDF by clicking the link below
+    click_view_pdf: Sasa Demarle Catalog – PDF
+    made_in_france: Made in France
+    united_states: UNITED STATES
+    information: Information
+    photos_catalog: Picture catalog
+    photos_catalog_text: Download the compressed photo file
+    terms_of_sales:
+        sasa:
+            title: Terms of sales SASA
+            description: Discover the terms of sales of SASA.
+            data:
+                - Application and effects of the terms of sales
+                - >
+                    Making an order implies full acceptance without reservation by the purchaser of our general conditions of sale.
+                    Except where express written acceptance is provided by us, no other conditions may take precedence over our terms
+                    of sales. Any contrary conditions imposed by the purchaser are, failing our express acceptance, without effect on
+                    our company, regardless of when we may be made aware of them, even if they appear in the purchaser's general conditions
+                    of sale. Failure by us to apply any of the provisions in our terms of sales at a given time may not be interpreted as
+                    renunciation to avail of this condition at a later date.
+                - Orders
+                - >
+                    No commitment is made by us for any orders, even taken by our representatives or employees, until written confirmation
+                    is made by us. In the event of partial dispatch of an order, confirmation is only valid for the products which are dispatched.
+                    The conditions we grant are strictly reserved for the recipient, as indicated on the order and the order confirmation.
+                    We reserve the right to request minimum sale quantities, to deliver + or - 3% of product quantity and to invoice these
+                    products. Except where indicated to the contrary, the offer validity, in terms of price and payment conditions, is 30
+                    days from the quotation issue date. In addition, when an order is accepted by our services, the purchaser is bound to pay
+                    for this order in full.
+                - Product modification
+                - >
+                    We reserve the right to make at any modifications that we consider useful to our products at any time and to modify without
+                    prior notice the models defined in our prospectuses and catalogues without any obligation to modify the products delivered
+                    previously or during an order. The modifications made may not lead to the payment of any damages and interest or penalties.
+                - Deliveries
+                - >
+                    We are authorized to make partial or full deliveries. Our delivery times are indicated as exactly as possible. Late deliveries
+                    may not lead to any damages and interest or retention from invoice or the cancellation of any orders in progress. However, if,
+                    one month following a warning notified by the purchaser by registered letter with reception acknowledgement which has remained
+                    without effect, the goods have still not been delivered for any reason other than Act of God or similar, the sale may be cancelled
+                    due to failure of execution. Cases which are considered similar to Acts of God and which free us from the obligation to deliver
+                    are: riots, total or partial disaster, bad weather, war, total or partial collective conflict, accidents, raw materials or products
+                    transport or procurement difficulties, administrative, legal or political decisions. The products may only be delivered on time if
+                    the purchaser is up to date in terms of all their obligations to us, for whatever reason. Our products are sold ex-works, and are
+                    considered to be delivered to the purchaser once they are made available to the carrier from our premises or once they are made
+                    available to the purchaser, in their premises, when we transport the goods using our own vehicles. The deliveries made by a carrier,
+                    even when agreed free of carriage duty and notwithstanding the ownership reserve below, travel at the purchaser's risks and peril.
+                    The purchaser must notify their reserves to the carrier in accordance with article L. 133.3 of the commercial code as well as to
+                    our company at the address which appears on the quotation or the order confirmation by registered letter with reception acknowledgement
+                    within 72 hours following reception of the products and, in any case, before the products are used or re-sold. Complains concerning
+                    hidden faults must be sent to us in the same format and within the same deadline as mentioned above from their discovery. We cannot
+                    be held responsible for any faults resulting from improper or extended storage of our products or improper or defective use of them.
+                    In all cases, the purchaser must provide the justification related to the reality of the anomalies or faults observed. They must also
+                    provide us with the possibility of observing these faults and correcting them where applicable. They must not intervene or have a third
+                    party intervene for this purpose.
+                - Returns
+                - >
+                    No products may be returned without our prior written agreement; this consent does not imply any recognition of responsibility on our part.
+                    Any products returned without our agreement will be kept available for the purchaser. The costs and risks of the return are always covered
+                    by the purchaser. If our responsibility is recognized, we have the possibility, at our choice, either to reimburse the goods or to exchange
+                    the products which are recognized as defective to the exclusion of any compensation or damages and interest related to direct or indirect
+                    harm. No products which have already been used by the purchaser may be exchanged or reimbursed. In addition, the faults or damage caused
+                    by natural wear and tear or by an external event or by a modification not made by us may not be taken charge of in any circumstances.
+                - Prices
+                - >
+                    Our prices do not include transport. The prices are provided at the price which applies when the order is confirmed. Our prices are ex.
+                    VAT and ex-works. All taxes, duties or other services to be paid under French or international regulations or the regulations of an importing
+                    or transit company are to be covered by the purchaser. The invoices are payable within 30 days from the invoice issue date without exception,
+                    by bank note, bank transfer, direct debit, bank card, credit or letter of credit. Except where a contrary convention is established with the
+                    purchaser, all first orders are payable in advance and in full. All subsequent orders must be paid for according to the indications on our
+                    invoice. No discounts for early payment are granted. Any complaints concerning invoicing must be sent to us by registered letter with reception
+                    acknowledgement within three days from reception of our invoices, clearly mentioning the invoice dates and numbers concerned. In the event of
+                    any late payment, we may suspend all orders in progress, without prejudice to any other course of action. Any sums which are not paid on their
+                    due date lead to the payment of late penalties equal to 3 times the current legal invoice date, of full right and without prior warning, in
+                    accordance with article L. 441-6 of the commercial code. These late penalties are due on the day following the payment date indicated on the
+                    invoice, without any reminder being necessary. Failure to pay the sums due leads to the demand for payment for all sums still owed, regardless
+                    of the method of payment specified and the invoices concerned. All invoices recovered by the disputes department are increased by a compensation
+                    amount at a fixed rate of 20% ex. VAT of their amount, without any prejudice to the reimbursement of non-payment and legal recovery fees. Under
+                    no circumstances may the payments be the subject of any compensation without our prior written agreement. We have the right to request solvency
+                    guarantees even during an order. When we have serious doubts as to the purchaser's solvency or when the purchaser fails to provide the requested
+                    guarantees, we have the right to demand prior payment for all deliveries and/or to suspend the delivery of the goods.
+                - Owners hip reserve
+                - >
+                    The transfer of ownership of the products sold is dependent on payment in full by the purchaser of the price and its accessories (fees, interest,
+                    etc.) law 85-98 of 25th January 1985, article 121). Payment is made by effective deposit of the full price; the handover of any document creating
+                    an obligation to pay does not constitute a payment. If the payment is not received within the set deadline, we reserve the right to recover the
+                    products delivered and, if we feel it appropriate, to resolve the corresponding sales. The products are returned to our premises when demanded by
+                    registered letter with reception acknowledgement, at the cost, risks and peril of the purchaser. We are authorized to draw up a unilateral inventory
+                    of the products which have not been paid for. The purchaser bears all the costs and fees caused by the claiming back of the goods, the inventory and
+                    the product recovery. The purchaser ensures that the product identification is always maintained. The products in stock are presumed not to have been
+                    paid for. The purchaser is liable for depreciation compensation set at 15% ex. VAT of the products which have not been paid for per month of fraction
+                    of month held, from delivery to their return. In the event of attachment or any other intervention by a third party on the goods, the purchaser must
+                    inform us without delay to enable us to opposite it and preserve our rights. In addition, the purchaser is prohibited from providing the goods as security,
+                    from reselling them or for transferring as guarantee the ownership of the goods before the transfer of ownership defined above. The purchaser shall
+                    insure the products sold under ownership reserve in the event of loss, damage or theft and inform us of any measures taken by any third parties on
+                    the products seized or others. If the goods are taken back, the down payments made by the purchaser remain acquired by us definitively.
+                - Assignment of jurisdiction – Applicable laws 
+                - >
+                    These general conditions of sale are subject to French law. The courts for our head office are the only competent body in the event of any kind of
+                    dispute. In the case of international transactions, French law and the French language are the only law and language applicable and the courts for
+                    our head office are the only competent bodies.
+            information: |
+                SASA: REGISTERED IN THE DOUAI TRADE & COMPANIES REGISTER, FRANCE, UNDER NO. 311 831 457
+                BUSINESS REGISTRATION NUM.: 311 831 457 00057 - VAT NUM.: FR 96 311 831 457
+        demarle:
+            title: Terms of sales Demarle
+            description: Discover the terms of sales of Demarle.
+            data:
+                - Application and effects of the terms of sales
+                - >
+                    Making an order implies full acceptance without reservation by the purchaser of our general conditions of sale. Except where express written acceptance
+                    is provided by us, no other conditions may take precedence over our terms of sales. Any contrary conditions imposed by the purchaser are, failing our
+                    express acceptance, without effect on our company, regardless of when we may be made aware of them, even if they appear in the purchaser's general
+                    conditions of sale. Failure by us to apply any of the provisions in our terms of sales at a given time may not be interpreted as renunciation to avail
+                    of this condition at a later date.
+                - Orders
+                - >
+                    No commitment is made by us for any orders, even taken by our representatives or employees, until written confirmation is made by us. In the event of
+                    partial dispatch of an order, confirmation is only valid for the products which are dispatched. The conditions we grant are strictly reserved for the
+                    recipient, as indicated on the order and the order confirmation. We reserve the right to request minimum sale quantities, to deliver + or - 3% of product
+                    quantity and to invoice these products. Except where indicated to the contrary, the offer validity, in terms of price and payment conditions, is 30
+                    days from the quotation issue date. In addition, when an order is accepted by our services, the purchaser is bound to pay for this order in full.
+                - Product modification
+                - >
+                    We reserve the right to make at any modifications that we consider useful to our products at any time and to modify without prior notice the models
+                    defined in our prospectuses and catalogues without any obligation to modify the products delivered previously or during an order. The modifications
+                    made may not lead to the payment of any damages and interest or penalties.
+                - Deliveries
+                - >
+                    We are authorized to make partial or full deliveries. Our delivery times are indicated as exactly as possible. Late deliveries may not lead to any
+                    damages and interest or retention from invoice or the cancellation of any orders in progress. However, if, one month following a warning notified by
+                    the purchaser by registered letter with reception acknowledgement which has remained without effect, the goods have still not been delivered for any
+                    reason other than Act of God or similar, the sale may be cancelled due to failure of execution. Cases which are considered similar to Acts of God and
+                    which free us from the obligation to deliver are: riots, total or partial disaster, bad weather, war, total or partial collective conflict, accidents,
+                    raw materials or products transport or procurement difficulties, administrative, legal or political decisions. The products may only be delivered on
+                    time if the purchaser is up to date in terms of all their obligations to us, for whatever reason. Our products are sold ex-works, and are considered
+                    to be delivered to the purchaser once they are made available to the carrier from our premises or once they are made available to the purchaser, in
+                    their premises, when we transport the goods using our own vehicles. The deliveries made by a carrier, even when agreed free of carriage duty and
+                    notwithstanding the ownership reserve below, travel at the purchaser's risks and peril. The purchaser must notify their reserves to the carrier in
+                    accordance with article L. 133.3 of the commercial code as well as to our company at the address which appears on the quotation or the order confirmation
+                    by registered letter with reception acknowledgement within 72 hours following reception of the products and, in any case, before the products are used
+                    or re-sold. Complains concerning hidden faults must be sent to us in the same format and within the same deadline as mentioned above from their discovery.
+                    We cannot be held responsible for any faults resulting from improper or extended storage of our products or improper or defective use of them.
+                    In all cases, the purchaser must provide the justification related to the reality of the anomalies or faults observed. They must also provide us with
+                    the possibility of observing these faults and correcting them where applicable. They must not intervene or have a third party intervene for this purpose.
+                - Returns
+                - >
+                    No products may be returned without our prior written agreement; this consent does not imply any recognition of responsibility on our part. Any products
+                    returned without our agreement will be kept available for the purchaser. The costs and risks of the return are always covered by the purchaser. If our
+                    responsibility is recognized, we have the possibility, at our choice, either to reimburse the goods or to exchange the products which are recognized as
+                    defective to the exclusion of any compensation or damages and interest related to direct or indirect harm. No products which have already been used by
+                    the purchaser may be exchanged or reimbursed. In addition, the faults or damage caused by natural wear and tear or by an external event or by a modification
+                    not made by us may not be taken charge of in any circumstances.
+                - Prices
+                - >
+                    Our prices do not include transport. The prices are provided at the price which applies when the order is confirmed. Our prices are ex. VAT and ex-works.
+                    All taxes, duties or other services to be paid under French or international regulations or the regulations of an importing or transit company are to be
+                    covered by the purchaser. The invoices are payable within 30 days from the invoice issue date without exception, by bank note, bank transfer, direct debit,
+                    bank card, credit or letter of credit. Except where a contrary convention is established with the purchaser, all first orders are payable in advance and in
+                    full. All subsequent orders must be paid for according to the indications on our invoice. No discounts for early payment are granted. Any complaints
+                    concerning invoicing must be sent to us by registered letter with reception acknowledgement within three days from reception of our invoices, clearly
+                    mentioning the invoice dates and numbers concerned. In the event of any late payment, we may suspend all orders in progress, without prejudice to any other
+                    course of action. Any sums which are not paid on their due date lead to the payment of late penalties equal to 3 times the current legal invoice date, of
+                    full right and without prior warning, in accordance with article L. 441-6 of the commercial code. These late penalties are due on the day following the
+                    payment date indicated on the invoice, without any reminder being necessary. Failure to pay the sums due leads to the demand for payment for all sums still
+                    owed, regardless of the method of payment specified and the invoices concerned. All invoices recovered by the disputes department are increased by a compensation
+                    amount at a fixed rate of 20% ex. VAT of their amount, without any prejudice to the reimbursement of non-payment and legal recovery fees. Under no circumstances
+                    may the payments be the subject of any compensation without our prior written agreement. We have the right to request solvency guarantees even during an order.
+                    When we have serious doubts as to the purchaser's solvency or when the purchaser fails to provide the requested guarantees, we have the right to demand prior
+                    payment for all deliveries and/or to suspend the delivery of the goods.
+                - Owners hip reserve
+                - >
+                    The transfer of ownership of the products sold is dependent on payment in full by the purchaser of the price and its accessories (fees, interest, etc.)
+                    law 85-98 of 25th January 1985, article 121). Payment is made by effective deposit of the full price; the handover of any document creating an obligation
+                    to pay does not constitute a payment. If the payment is not received within the set deadline, we reserve the right to recover the products delivered and,
+                    if we feel it appropriate, to resolve the corresponding sales. The products are returned to our premises when demanded by registered letter with reception
+                    acknowledgement, at the cost, risks and peril of the purchaser. We are authorized to draw up a unilateral inventory of the products which have not been paid for.
+                    The purchaser bears all the costs and fees caused by the claiming back of the goods, the inventory and the product recovery. The purchaser ensures that the product
+                    identification is always maintained. The products in stock are presumed not to have been paid for. The purchaser is liable for depreciation compensation set at
+                    15% ex. VAT of the products which have not been paid for per month of fraction of month held, from delivery to their return. In the event of attachment or any
+                    other intervention by a third party on the goods, the purchaser must inform us without delay to enable us to opposite it and preserve our rights. In addition,
+                    the purchaser is prohibited from providing the goods as security, from reselling them or for transferring as guarantee the ownership of the goods before the transfer
+                    of ownership defined above. The purchaser shall insure the products sold under ownership reserve in the event of loss, damage or theft and inform us of any measures
+                    taken by any third parties on the products seized or others. If the goods are taken back, the down payments made by the purchaser remain acquired by us definitively.
+                - Assignment of jurisdiction - Applicable laws
+                - >
+                    These general conditions of sale are subject to French law. The courts for our head office are the only competent body in the event of any kind of dispute.
+                    In the case of international transactions, French law and the French language are the only law and language applicable and the courts for our head office are
+                    the only competent bodies.
+            information: |
+                DEMARLE : REGISTERED IN THE LILLE TRADE & COMPANIES REGISTER, FRANCE, UNDER NO. 950 080 465
+                BUSINESS REGISTRATION NUM.: 950 080 465 00046 - VAT NUM.: FR 03 950 080 465
+        privacy:
+            title: Privacy
+            description: Privacy.
+            data:
+                - Information We Collect
+                - >
+                    Our Website typically collects two kinds of information about you: (a) information that you provide which personally identifies you; and (b) information that does not personally identify you which we automatically collect when you visit our Website or that you provide us.
+                    Personally Identifiable Information: Our definition of personally identifiable information includes any information that may be used to specifically identify or contact you, such as your name, address, e-mail address, phone number, etc. As a general policy, to facilitate the use of FreeWebTemplates.com content, you must provide personally identifiable information when registering. Affiliates of FreeWebTemplates.com may also be required to provide a tax identification number.
+                    Non-Personal Information: Our definition of non-personal information is any information that does not personally identify you. Non-personal information can include certain personally identifiable information that has been de-identified; that is, information that has been rendered anonymous. We obtain non-personal information about you from information that you provide us, either separately or together with your personally identifiable information. We also automatically collect certain non-personal information from you when you access our Websites. This information can include, among other things, IP addresses, the type of browser you are using (e.g., Internet Explorer, Firefox, Safari, etc.), the third party website from which your visit originated, the operating system you are using (e.g., Vista, Windows XP, Macintosh OS, etc.), the domain name of your Internet service provider (e.g., America Online, NetZero, etc.), the specific areas of the Website that you visit, and the duration of your visit
+                        
+                - How We Use and Share the Information Collected
+                - >
+                    The personally identifiable information you submit to us is generally used to carry out your purchase of FreeWebTemplates.com content. In the event you have become a FreeWebTemplates.com Member, the personally identifiable information you submit to us will be used to identify you as an FreeWebTemplates.com Member and to facilitate your access to Membership benefits. We may also use this information to later contact you for a variety of reasons, such as customer service, providing you promotional information about our products and services or those of our other affiliated companies ("affiliated companies"), or to communicate with you about the services we have provided.
+                    In certain instances we may also share your personally identifiable information with our third party vendors performing functions on our behalf (or on behalf of our affiliated companies) ? e.g., vendors that process credit card orders such as AuthorizeNet, and other companies who provide us marketing or promotional assistance, analyze our data, assist us with customer service, etc. Our vendors agree to use this information, and we share information with them, only to carry out our requests. Except as provided in this Privacy Policy or these Terms of Use, your personally identifiable information will not be shared or sold to any third parties without your prior approval.
+                - Other Uses and Information
+                - >
+                    Cookies: "Cookies" are small text files from a website that are stored on your hard drive. These text files make using our Website more convenient by, among other things, saving your passwords and preferences for you. Cookies themselves do not typically contain any personally identifiable information. We may analyze the information derived from these cookies and match this information with data provided by you or another party.
+                    If you are concerned about the storage and use of cookies, you may be able to direct your internet browser to notify you and seek approval whenever a cookie is being sent to your hard drive. You may also delete a cookie manually from your hard drive through your internet browser or other programs. Please note, however, that some parts of our Website will not function properly or be available to you if you refuse to accept a cookie or choose to disable the acceptance of cookies.
+                - Deliveries
+                - >
+                    We are authorized to make partial or full deliveries. Our delivery times are indicated as exactly as possible. Late deliveries may not lead to any
+                    damages and interest or retention from invoice or the cancellation of any orders in progress. However, if, one month following a warning notified by
+                    the purchaser by registered letter with reception acknowledgement which has remained without effect, the goods have still not been delivered for any
+                    reason other than Act of God or similar, the sale may be cancelled due to failure of execution. Cases which are considered similar to Acts of God and
+                    which free us from the obligation to deliver are: riots, total or partial disaster, bad weather, war, total or partial collective conflict, accidents,
+                    raw materials or products transport or procurement difficulties, administrative, legal or political decisions. The products may only be delivered on
+                    time if the purchaser is up to date in terms of all their obligations to us, for whatever reason. Our products are sold ex-works, and are considered
+                    to be delivered to the purchaser once they are made available to the carrier from our premises or once they are made available to the purchaser, in
+                    their premises, when we transport the goods using our own vehicles. The deliveries made by a carrier, even when agreed free of carriage duty and
+                    notwithstanding the ownership reserve below, travel at the purchaser's risks and peril. The purchaser must notify their reserves to the carrier in
+                    accordance with article L. 133.3 of the commercial code as well as to our company at the address which appears on the quotation or the order confirmation
+                    by registered letter with reception acknowledgement within 72 hours following reception of the products and, in any case, before the products are used
+                    or re-sold. Complains concerning hidden faults must be sent to us in the same format and within the same deadline as mentioned above from their discovery.
+                    We cannot be held responsible for any faults resulting from improper or extended storage of our products or improper or defective use of them.
+                    In all cases, the purchaser must provide the justification related to the reality of the anomalies or faults observed. They must also provide us with
+                    the possibility of observing these faults and correcting them where applicable. They must not intervene or have a third party intervene for this purpose.
+                - Returns
+                - >
+                    No products may be returned without our prior written agreement; this consent does not imply any recognition of responsibility on our part. Any products
+                    returned without our agreement will be kept available for the purchaser. The costs and risks of the return are always covered by the purchaser. If our
+                    responsibility is recognized, we have the possibility, at our choice, either to reimburse the goods or to exchange the products which are recognized as
+                    defective to the exclusion of any compensation or damages and interest related to direct or indirect harm. No products which have already been used by
+                    the purchaser may be exchanged or reimbursed. In addition, the faults or damage caused by natural wear and tear or by an external event or by a modification
+                    not made by us may not be taken charge of in any circumstances.
+                - Prices
+                - >
+                    Our prices do not include transport. The prices are provided at the price which applies when the order is confirmed. Our prices are ex. VAT and ex-works.
+                    All taxes, duties or other services to be paid under French or international regulations or the regulations of an importing or transit company are to be
+                    covered by the purchaser. The invoices are payable within 30 days from the invoice issue date without exception, by bank note, bank transfer, direct debit,
+                    bank card, credit or letter of credit. Except where a contrary convention is established with the purchaser, all first orders are payable in advance and in
+                    full. All subsequent orders must be paid for according to the indications on our invoice. No discounts for early payment are granted. Any complaints
+                    concerning invoicing must be sent to us by registered letter with reception acknowledgement within three days from reception of our invoices, clearly
+                    mentioning the invoice dates and numbers concerned. In the event of any late payment, we may suspend all orders in progress, without prejudice to any other
+                    course of action. Any sums which are not paid on their due date lead to the payment of late penalties equal to 3 times the current legal invoice date, of
+                    full right and without prior warning, in accordance with article L. 441-6 of the commercial code. These late penalties are due on the day following the
+                    payment date indicated on the invoice, without any reminder being necessary. Failure to pay the sums due leads to the demand for payment for all sums still
+                    owed, regardless of the method of payment specified and the invoices concerned. All invoices recovered by the disputes department are increased by a compensation
+                    amount at a fixed rate of 20% ex. VAT of their amount, without any prejudice to the reimbursement of non-payment and legal recovery fees. Under no circumstances
+                    may the payments be the subject of any compensation without our prior written agreement. We have the right to request solvency guarantees even during an order.
+                    When we have serious doubts as to the purchaser's solvency or when the purchaser fails to provide the requested guarantees, we have the right to demand prior
+                    payment for all deliveries and/or to suspend the delivery of the goods.
+                - Owners hip reserve
+                - >
+                    The transfer of ownership of the products sold is dependent on payment in full by the purchaser of the price and its accessories (fees, interest, etc.)
+                    law 85-98 of 25th January 1985, article 121). Payment is made by effective deposit of the full price; the handover of any document creating an obligation
+                    to pay does not constitute a payment. If the payment is not received within the set deadline, we reserve the right to recover the products delivered and,
+                    if we feel it appropriate, to resolve the corresponding sales. The products are returned to our premises when demanded by registered letter with reception
+                    acknowledgement, at the cost, risks and peril of the purchaser. We are authorized to draw up a unilateral inventory of the products which have not been paid for.
+                    The purchaser bears all the costs and fees caused by the claiming back of the goods, the inventory and the product recovery. The purchaser ensures that the product
+                    identification is always maintained. The products in stock are presumed not to have been paid for. The purchaser is liable for depreciation compensation set at
+                    15% ex. VAT of the products which have not been paid for per month of fraction of month held, from delivery to their return. In the event of attachment or any
+                    other intervention by a third party on the goods, the purchaser must inform us without delay to enable us to opposite it and preserve our rights. In addition,
+                    the purchaser is prohibited from providing the goods as security, from reselling them or for transferring as guarantee the ownership of the goods before the transfer
+                    of ownership defined above. The purchaser shall insure the products sold under ownership reserve in the event of loss, damage or theft and inform us of any measures
+                    taken by any third parties on the products seized or others. If the goods are taken back, the down payments made by the purchaser remain acquired by us definitively.
+                - Assignment of jurisdiction - Applicable laws
+                - >
+                    These general conditions of sale are subject to French law. The courts for our head office are the only competent body in the event of any kind of dispute.
+                    In the case of international transactions, French law and the French language are the only law and language applicable and the courts for our head office are
+                    the only competent bodies.
+            information: |
+                DEMARLE : REGISTERED IN THE LILLE TRADE & COMPANIES REGISTER, FRANCE, UNDER NO. 950 080 465
+                BUSINESS REGISTRATION NUM.: 950 080 465 00046 - VAT NUM.: FR 03 950 080 465

@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'app.terms_of_sales.demarle.title'|trans }} - {{ parent() }}{% endblock %}
+
+{% block description %}{{ 'app.terms_of_sales.demarle.description'|trans }}{% endblock %}
+
+{% block body %}
+		<section id="general">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>{{ 'app.terms_of_sales.demarle.title'|trans }}</h2>
+						<hr class="star-light">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12 text-justify">
+				{% set paragraph_no = 1 %}
+				{% for i in 0..15 %}
+					{% if loop.index0 % 2 == 0 %}
+						<h4>{{ paragraph_no }}/ {{ ('app.terms_of_sales.demarle.data.'~i)|trans }}</h4>
+						{% set paragraph_no = paragraph_no + 1 %}
+					{% else %}
+						<p>{{ ('app.terms_of_sales.demarle.data.'~i)|trans }}</p>
+					{% endif %}
+				{% endfor %}
+						<br><br>
+						<h4>{{ 'app.information'|trans }}</h4>
+						<p><strong>{{ 'app.terms_of_sales.demarle.information'|trans|nl2br }}</strong></p>
+					</div>
+				</div>
+			</div>
+		</section>
+{% endblock %}

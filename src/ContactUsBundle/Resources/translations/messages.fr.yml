@@ -1,0 +1,35 @@
+contact_us:
+    description: Formulaire de contact pour contacter l'équipe du Groupe Sasa Demarle.
+    db:
+        purpose: Je souhaite...
+        company: Société
+        activity: Activité
+        gender: Civilité
+        last_name: Nom
+        first_name: Prénom
+        email: E-Mail
+        phone: Téléphone
+        address: Adresse
+        city: Ville
+        zip_code: Code postal
+        country: Pays
+        product_types: Type de produit qui m'intéresse
+        promotions_news: Je souhaite être informé de vos promotions et nouveautés
+        language: Langue
+        message: Message
+        file_name_1: Description du fichier 1
+        file_name_2: Description du fichier 2
+        file_path_1: Fichier joint 1
+        file_path_2: Fichier joint 2
+    select: Selectionner...
+    send: Envoyer
+    privacy: Confidentialité
+    yes: Oui
+    no: Non
+    browse: Parcourir...
+    product_types_not_blank: Veuillez sélectionner au moins une option.
+    flash:
+        add_contact_success: La demande de contact a été enregistrée avec succès.
+        errors_in_form: Veuillez vérifier les champs comportant des erreurs.
+    email:
+        new_contact: Une nouvelle demande de contact a été créée par un internaute, en voici les informations

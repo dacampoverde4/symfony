@@ -1,0 +1,54 @@
+# VARIABLES D'ENVIRONNEMENT
+SetEnv SHORT_OPEN_TAGS 0
+
+# FORCE HTTPS SUR LE PORT 80 VERS www.groupesasademarle.com
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.groupesasademarle.com/$1 [R=301,L]
+
+# REDIRECTION 301 DES DOMAINES VERS www.groupesasademarle.com
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !www.groupesasademarle.com$ [NC]
+RewriteRule ^(.*)$ https://www.groupesasademarle.com/$1 [QSA,L,R=301]
+
+# REDIRECTION VERS LE REPERTOIRE WEB
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ web/$1 [QSA,L]
+
+# HEADERS DE SECURITE
+Header unset ETag
+FileETag none
+ServerSignature off 
+Header set X-Frame-Options SAMEORIGIN
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Content-Type-Options nosniff
+Header set Referrer-Policy "no-referrer-when-downgrade"
+
+# PROTECTION DU FICHIER HTACCESS
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+# PROTECTION LECTURE REPERTOIRE
+Options All -Indexes
+
+# MISE EN CACHE DES FICHIERS IMAGE (7 JOURS)
+<filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$"> 
+    Header set Cache-Control "max-age=604800000, public" 
+</filesMatch> 
+
+# COMPRESSION DES FICHIERS
+<IfModule mod_deflate.c> 
+    AddOutputFilterByType DEFLATE text/plain 
+    AddOutputFilterByType DEFLATE text/html 
+    AddOutputFilterByType DEFLATE text/xml 
+    AddOutputFilterByType DEFLATE text/css 
+    AddOutputFilterByType DEFLATE text/x-component 
+    AddOutputFilterByType DEFLATE application/xml 
+    AddOutputFilterByType DEFLATE application/xhtml+xml 
+    AddOutputFilterByType DEFLATE application/rss+xml 
+    AddOutputFilterByType DEFLATE application/javascript 
+    AddOutputFilterByType DEFLATE application/x-javascript 
+</IfModule>

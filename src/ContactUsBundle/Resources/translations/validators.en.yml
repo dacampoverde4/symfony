@@ -1,0 +1,17 @@
+contact_us:
+    validators:
+        company_length: The company can not be longer than {{ limit }} characters.
+        last_name_length: The last name can not be longer than {{ limit }} characters.
+        first_name_length: The first name can not be longer than {{ limit }} characters.
+        email_length: The email can not be longer than {{ limit }} characters.
+        phone_length: The phone can not be longer than {{ limit }} characters.
+        address_length: The address can not be longer than {{ limit }} characters.
+        city_length: The city can not be longer than {{ limit }} characters.
+        zip_code_length: The ZIP code can not be longer than {{ limit }} characters.
+        country_length: The country can not be longer than {{ limit }} characters.
+        promotions_news_type: The value entered is incorrect.
+        product_types_not_blank: Please select at least one product type.
+        file_1_type: File 1 must be of type .pdf, .doc, .docx, .png or .jpg.
+        file_1_size: File 1 must have a maximum size of {{ limit }} {{ suffix }}.
+        file_2_type: File 2 must be of type .pdf, .doc, .docx, .png or .jpg.
+        file_2_size: File 2 must have a maximum size of {{ limit }} {{ suffix }}.

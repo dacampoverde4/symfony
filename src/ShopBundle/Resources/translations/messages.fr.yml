@@ -1,0 +1,42 @@
+shop:
+    description: Commandez nos moules souples Flexipan®, Flexipat®, Silform®, toiles de cuisson Silpat®, toiles boulangères Silpain®, filets complets inox, filets complets Fibermax®, plaques patissières alu et bien d'autres produits.
+    intro_1: Commandez en un clic notre sélection de produits phares*.
+    intro_2: Un email de validation vous sera envoyé pour confirmer votre commande.
+    intro_note: Frais de livraison en supplément. Photos non contractuelles.
+    db:
+        company: Société
+        last_name: Nom
+        first_name: Prénom
+        email: E-Mail
+        phone: Téléphone
+        crn: SIRET
+        address: Adresse
+        city: Ville
+        zip_code: Code postal
+        country: Pays
+        products: Produits
+        product_no: Code article
+        description: Désignation
+        quantity: Quantité
+        price: Prix unitaire
+        amount: Montant
+        summary: Récapitulatif
+        information: Informations
+        total_amount: "Montant total :"
+    send: Envoyer
+    by_lot_of: Vendu par lot de
+    flash:
+        add_sales_order_success: La commande a été enregistrée avec succès.
+        errors_in_form: Veuillez vérifier les champs comportant des erreurs.
+    email:
+        subject_gsd: Nouvelle commande
+        subject_customer: Votre commande Sasa Demarle
+        new_order_gsd: Une nouvelle commande a été créée par un internaute, en voici les informations
+        new_order_customer: |
+            Voici le détail de votre commande passée sur notre site Internet.
+            Votre commande sera validée lorsque vous recevrez une confirmation de commande finale de notre service commercial, incluant le calcul des frais de livraison.
+        delivery_info: Frais de livraison en supplément.
+        thanks: |
+            Nous vous remercions de votre commande.
+            
+            L’équipe Sasa-Demarle

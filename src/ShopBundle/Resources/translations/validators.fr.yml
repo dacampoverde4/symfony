@@ -1,0 +1,28 @@
+shop:
+    validators:
+        product_id_uniq: Un produit existe déjà avec ce code.
+        product_id_length: Le code article doit faire au maximum {{ limit }} caractères.
+        description_1_fra_length: La description 1 en français doit faire au maximum {{ limit }} caractères.
+        description_1_eng_length: La description 1 en anglais doit faire au maximum {{ limit }} caractères.
+        description_2_fra_length: La description 2 en français doit faire au maximum {{ limit }} caractères.
+        description_2_eng_length: La description 2 en anglais doit faire au maximum {{ limit }} caractères.
+        description_3_fra_length: La description 3 en français doit faire au maximum {{ limit }} caractères.
+        description_3_eng_length: La description 3 en anglais doit faire au maximum {{ limit }} caractères.
+        price_type: Le prix doit être un nombre décimal.
+        price_greater_than: Le prix doit être supérieur à zéro.
+        unit_type: L'unité doit être un nombre entier.
+        unit_greater_than: L'unité doit être supérieur à zéro.
+        company_length: La société doit faire au maximum {{ limit }} caractères.
+        last_name_length: Le nom doit faire au maximum {{ limit }} caractères.
+        first_name_length: Le prénom doit faire au maximum {{ limit }} caractères.
+        address_length: L'adresse doit faire au maximum {{ limit }} caractères.
+        zip_code_length: Le code postal doit faire au maximum {{ limit }} caractères.
+        city_length: La ville doit faire au maximum {{ limit }} caractères.
+        country_length: Le pays doit faire au maximum {{ limit }} caractères.
+        crn_length: Le SIRET doit faire au maximum {{ limit }} caractères.
+        phone_length: Le téléphone doit faire au maximum {{ limit }} caractères.
+        email_length: L'email doit faire au maximum {{ limit }} caractères.
+        quantity_type: La quantité doit être un nombre entier.
+        product_selection_not_blank: Vous n'avez sélectionné aucun produit.
+        quantity_step: La quantité renseignée est incorrecte.
+        order_type: L'ordre doit être un nombre entier.

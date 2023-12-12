@@ -1,0 +1,28 @@
+shop:
+    validators:
+        product_id_uniq: A product already exists with this code.
+        product_id_length: The product code can not be longer than {{ limit }} characters.
+        description_1_fra_length: The description 1 in French can not be longer than {{ limit }} characters.
+        description_1_eng_length: The description 1 in English can not be longer than {{ limit }} characters.
+        description_2_fra_length: The description 2 in French can not be longer than {{ limit }} characters.
+        description_2_eng_length: The description 2 in English can not be longer than {{ limit }} characters.
+        description_3_fra_length: The description 3 in French can not be longer than {{ limit }} characters.
+        description_3_eng_length: The description 3 in English can not be longer than {{ limit }} characters.
+        price_type: The price must be a decimal number.
+        price_greater_than: The price must be greater than zero.
+        unit_type: The unit must be an integer.
+        unit_greater_than: The unit must be greater than zero.
+        company_length: The company can not be longer than {{ limit }} characters.
+        last_name_length: The last name can not be longer than {{ limit }} characters.
+        first_name_length: The first name can not be longer than {{ limit }} characters.
+        address_length: The address can not be longer than {{ limit }} characters.
+        zip_code_length: The ZIP code can not be longer than {{ limit }} characters.
+        city_length: The city can not be longer than {{ limit }} characters.
+        country_length: The country can not be longer than {{ limit }} characters.
+        crn_length: The site tax ID no. can not be longer than {{ limit }} characters.
+        phone_length: The phone can not be longer than {{ limit }} characters.
+        email_length: The email can not be longer than {{ limit }} characters.
+        quantity_type: The quantity must be an integer.
+        product_selection_not_blank: Please select at least one product.
+        quantity_step: The quantity entered is incorrect.
+        order_type: The order must be an integer.

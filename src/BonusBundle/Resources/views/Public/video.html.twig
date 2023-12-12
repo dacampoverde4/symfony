@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'all.videos'|trans }} - {{ parent() }}{% endblock %}
+
+{% block description %}{{ 'bonus.description_videos'|trans }}{% endblock %}
+
+{% block body %}
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel"></h4>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section id="general">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>{{ 'all.videos'|trans }}</h2>
+						<hr class="star-light">
+					</div>
+				</div>
+
+				<div class="row">
+					{% for item in videos %}
+					<a href="{{ item.link }}" class="bonus-video">
+						<div class="col-lg-4 col-sm-6">
+							<img src="{{ asset('img/videos/'~item.image) }}" class="img-responsive center-block" alt="{{ item }}">
+							<p class="text-center">{{ item }}</p>
+						</div>
+					</a>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+<script>
+	$(function() {
+		'use strict';
+
+		$('.bonus-video').click(function(e) {
+			e.preventDefault();
+
+			$('#myModal .modal-title').html($(this).find('p').html());
+			$('#myModal').modal('show');
+			$('#myModal iframe').attr('src', $(this).attr('href')+'&amp;autoplay=1');
+		});
+
+		$('#myModal').on('hidden.bs.modal', function () {
+			$('#myModal iframe').removeAttr('src');
+		});
+	});
+</script>
+{% endblock %}

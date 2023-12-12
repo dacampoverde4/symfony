@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'all.events'|trans }} - {{ parent() }}{% endblock %}
+
+{% block description %}{{ 'bonus.description_events'|trans }}{% endblock %}
+
+{% block body %}
+		<section id="general">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>{{ 'all.events'|trans }}</h2>
+						<hr class="star-light">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="media-list">
+						{% for item in events %}
+							<li class="media">
+								<div class="media-left media-middle">
+									<strong>{{ 'bonus.from'|trans }}</strong>
+								</div>
+								<div class="media-left">
+									<div class="panel panel-danger text-center date">
+										<div class="panel-heading month">
+											<span class="panel-title">{{ item.startDate|intl_date('MMM') }}</span>
+										</div>
+										<div class="panel-body day text-danger">
+											{{ item.startDate|date('d') }}
+										</div>
+										<div class="panel-footer year text-danger">
+											{{ item.startDate|date('Y') }}
+										</div>
+									</div>
+								</div>
+								<div class="media-left media-middle">
+									<strong>{{ 'bonus.to'|trans }}</strong>
+								</div>
+								<div class="media-left">
+									<div class="panel panel-danger text-center date">
+										<div class="panel-heading month">
+											<span class="panel-title">{{ item.endDate|intl_date('MMM') }}</span>
+										</div>
+										<div class="panel-body day text-danger">
+											{{ item.endDate|date('d') }}
+										</div>
+										<div class="panel-footer year text-danger">
+											{{ item.endDate|date('Y') }}
+										</div>
+									</div>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">{{ item.title }}</h4>
+									<p>{{ item.location }}</p>
+								</div>
+							{% if item.image is not empty %}
+								<div class="media-right media-middle hidden-xs">
+									<img src="{{ asset('img/shows/'~item.image) }}" class="media-object" alt="{{ item.title }}">
+								</div>
+							{% endif %}
+							</li>
+						{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+{% endblock %}

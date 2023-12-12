@@ -1,0 +1,209 @@
+{% extends 'base.html.twig' %}
+
+{% block description %}{{ 'app.description'|trans }}{% endblock %}
+
+{% block body %}
+		<div class="modal fade" id="modal-video" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+{% if app.request.get('rgpd') is not empty %}
+		<div class="modal fade" id="modal-rgpd" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<img src="{{ asset('img/logo_sasa_demarle_rgpd.jpg') }}" class="img-responsive center-block" alt=""><br><br>
+					{% if app.request.get('rgpd') == 'ok' %}
+						<p>{{ 'app.rgpd_ok_1'|trans }}</p>
+						<p>{{ 'app.rgpd_ok_2'|trans({'%link_start%': '<a href="mailto:service.marketing@sasa-demarle.com">', '%link_end%': '</a>'})|raw|nl2br }}</p>
+					{% elseif app.request.get('rgpd') == 'ko' %}
+						<p>{{ 'app.rgpd_ko_1'|trans }}</p>
+						<p>{{ 'app.rgpd_ko_2'|trans({'%link_start%': '<a href="mailto:service.marketing@sasa-demarle.com">', '%link_end%': '</a>'})|raw|nl2br }}</p>
+					{% endif %}
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">{{ 'app.rgpd_button'|trans }}</button>
+					</div>
+				</div>
+			</div>
+		</div>
+{% endif %}
+		<section id="home">
+			<div id="main-carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#main-carousel" data-slide-to="1"></li>
+					<li data-target="#main-carousel" data-slide-to="2"></li>
+					<li data-target="#main-carousel" data-slide-to="3"></li>
+					<li data-target="#main-carousel" data-slide-to="4"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active" style="background-image:url('{{ asset('img/slide7.jpg') }}');"><div class="carousel-caption"><h3 id="sasa-video-title">{{ 'app.discover_sasa'|trans }}</h3><p><a href="https://www.youtube.com/embed/luSj3jkFyAM?rel=0&amp;showinfo=0" id="sasa-video"><button type="button" class="btn btn-default">{{ 'app.watch_the_video'|trans }}</button></a></p></div></div>
+					<div class="item" style="background-image:url('{{ asset('img/slide0.jpg') }}');"><div class="carousel-caption"><h3 id="flexipan-video-title">{{ 'app.discover_flexipan'|trans }}</h3><p><a href="https://www.youtube.com/embed/VULy4nW9v3g?rel=0&amp;showinfo=0" id="flexipan-video"><button type="button" class="btn btn-default">{{ 'app.watch_the_video'|trans }}</button></a></p></div></div>
+					<div class="item" style="background-image:url('{{ asset('img/slide1.jpg') }}');"></div>
+					<div class="item" style="background-image:url('{{ asset('img/slide2.jpg') }}');"></div>
+					<div class="item" style="background-image:url('{{ asset('img/slide3.jpg') }}');"></div>
+				</div>
+
+				<a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">{{ 'app.previous_slide'|trans }}</span>
+				</a>
+				<a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">{{ 'app.next_slide'|trans }}</span>
+				</a>
+			</div>
+		</section>
+
+		<section id="groupe">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<img src="{{ asset('img/logo_sasa_demarle.png') }}" class="img-responsive center-block" alt="{{ 'all.the_group'|trans }}">
+						<hr class="star-light">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-2">
+						<p>{{ 'app.the_group_paragraph_1'|trans }}</p>
+					</div>
+					<div class="col-lg-4">
+						<p>{{ 'app.the_group_paragraph_2'|trans }}</p>
+					</div>
+				</div>
+				<hr class="star-light">
+				<div class="row">
+					<div class="col-lg-12">
+						<h4>{{ 'app.our_sales_force'|trans }}</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<h5>{{ 'app.distribution_customers'|trans }}</h5>
+						<a href="https://drive.google.com/open?id=1jQZjQUrKmPB7z8Sh1LPz2vCt4u9HM3ho&usp=sharing" title="{{ 'app.click_to_browse'|trans }}" target="_blank"><img src="{{ asset('img/map_distribution.jpg') }}" class="img-responsive center-block img-thumbnail" alt="{{ 'app.map_distribution'|trans }}"></a>
+					</div>
+					<div class="col-lg-6">
+						<h5>{{ 'app.industry_customers'|trans }}</h5>
+						<a href="https://drive.google.com/open?id=10g0kDKrXdLWjO6HbqhNWtAmxVtakwjT6&usp=sharing" title="{{ 'app.click_to_browse'|trans }}" target="_blank"><img src="{{ asset('img/map_industry.jpg') }}" class="img-responsive center-block img-thumbnail" alt="{{ 'app.map_industry'|trans }}"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="catalogue">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>{{ 'all.catalogs'|trans }}<img src="{{ asset('img/made_in_france_'~app.request.getLocale()~'.png') }}" alt="{{ 'app.made_in_france'|trans }}" style="margin-left:20px;"></h2>
+						<hr class="star-primary">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 catalogue-item text-center">
+						<a href="http://online.flipbuilder.com/ufjx/kiio/" class="catalogue-link" target="_blank">
+							<div class="caption">
+								<div class="caption-content">
+									<i class="fa fa-download fa-3x"></i>
+								</div>
+							</div>
+							<img src="{{ asset('img/img_sasa_demarle.jpg') }}" class="img-responsive center-block" alt="{{ 'app.sasa_demarle_catalog'|trans }}">
+							<img src="{{ asset('img/logo_sasa_demarle.png') }}" class="img-responsive center-block" style="max-height:80px;" alt="{{ 'app.sasa_demarle_logo'|trans }}">
+						</a>
+						<small>{{ 'app.click_view_catalog'|trans|nl2br }}</small>
+						<a href="{{ asset('downloads/SASA-Demarle-Catalog.pdf') }}" target="_blank"{% if app.environment == 'prod' %} onclick="gtag('event', 'click', {'event_category': 'download', 'event_label': this.href});"{% endif %}>{{ 'app.click_view_pdf'|trans }}</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2>{{ 'app.contact'|trans }}</h2>
+						<hr class="star-primary">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<address>
+							<strong>SASA</strong><br>
+							ZI n°1 – Route de Pommereuil – BP9<br>
+							59360 Le Cateau Cambrésis – FRANCE<br>
+							<a href="tel:33327842338">+33 (0)3 27 84 23 38</a><br>
+							{{ 'app.customer_service'|trans }} : <a href="tel:33327843628">+33 (0)3 27 84 36 28</a>
+						</address>
+					</div>
+					<div class="col-md-4">
+						<address>
+							<strong>DEMARLE®</strong><br>
+							Parc d’activité Les Ansereuilles<br>
+							59136 Wavrin – FRANCE<br>
+							<a href="tel:33320588384">+33 (0)3 20 58 83 84</a><br />
+                                                        {{ 'app.customer_service'|trans }} : <a href="tel:33320589835">+33 (0)3 20 58 98 35</a>
+						</address>
+					</div>
+					<div class="col-md-4">
+						<address>
+							<strong>SASA DEMARLE Inc.</strong><br>
+							8 Corporate Drive<br>
+							Cranbury, NJ 08512 – {{ 'app.united_states'|trans }}<br>
+							<a href="tel:6093950219">(609) 395 0219</a>
+						</address>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<a href="{{ path('contact_us_homepage') }}" class="btn btn-primary btn-lg">{{ 'all.contact_us'|trans }}</a>
+					</div>
+				</div>
+			</div>
+		</section>
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+<script>$(window).load(function(){'use strict';var slideHeight=$(window).height()*0.75-97;$('#home .carousel-inner .item, #home .video-container').css('height',slideHeight);$(window).resize(function(){'use strict';var slideHeight=$(window).height()*0.75-97;$('#home .carousel-inner .item, #home .video-container').css('height',slideHeight)});if(window.location.hash){$('html, body').animate({scrollTop:$(window.location.hash).offset().top-50},0)}})</script>
+<script>
+	$(function() {
+		'use strict';
+
+		$('#flexipan-video').click(function(e) {
+			e.preventDefault();
+
+			$('#modal-video .modal-title').html($('#flexipan-video-title').html());
+			$('#modal-video').modal('show');
+			$('#modal-video iframe').attr('src', $(this).attr('href')+'&amp;autoplay=1');
+		});
+                
+                $('#sasa-video').click(function(e) {
+			e.preventDefault();
+
+			$('#modal-video .modal-title').html($('#sasa-video-title').html());
+			$('#modal-video').modal('show');
+			$('#modal-video iframe').attr('src', $(this).attr('href')+'&amp;autoplay=1');
+		});
+
+		$('#modal-video').on('hidden.bs.modal', function () {
+			$('#modal-video iframe').removeAttr('src');
+		});
+		
+	{% if app.request.get('rgpd') is not empty %}
+		$('#modal-rgpd').modal('show');
+	{% endif %}
+	});
+</script>
+{% endblock %}

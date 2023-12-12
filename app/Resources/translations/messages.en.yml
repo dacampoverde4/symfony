@@ -1,0 +1,46 @@
+all:
+    title: Groupe Sasa Demarle
+    toggle_navigation: Toggle navigation
+    menu: Menu
+    tag_line: Expert in bakery and pastry solutions
+    the_group: The group
+    catalogs: Catalog
+    shop: Shop
+    contact_us: Contact us
+    bonus: Bonus
+    videos: Videos
+    events: Events
+    technical_notices: Technical notices
+    french_flag: French flag
+    english_flag: English flag
+    social_media: Social media
+    logo: Logo
+    miscellaneous: Miscellaneous
+    terms_of_sales: Terms of sales
+    cookie:
+        message: We are using cookies to ensure you get the best experience on our website. If you close this alert box and continue browsing, that means that you agree with cookies usage.
+        dismiss: I agree
+        link: More information
+    email:
+        hello: Hello
+        no_not_reply: This is an automatic message, please do not reply.
+    error:
+        err0:
+            title: Error
+            text: |
+                An error has occurred
+                Please send this error to the administrator with this information:
+                Code : %status_code%
+                Text : %status_text%
+        err403:
+            title: Unauthorized access
+            text: You do not have rights to access the page.
+        err404:
+            title: Page not found
+            text: |
+                The page you want to access does not exist or no longer exists.
+                
+                You can return to the homepage by following this link:
+        err500:
+            title: Internal error
+            text: The server has encountered an error. If the problem persists, please notify the administrator.

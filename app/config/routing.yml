@@ -1,0 +1,16 @@
+bonus:
+    resource: "@BonusBundle/Resources/config/routing.yml"
+    prefix:   /
+
+shop:
+    resource: "@ShopBundle/Resources/config/routing.yml"
+    prefix:   /
+
+contact_us:
+    resource: "@ContactUsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:   /
+

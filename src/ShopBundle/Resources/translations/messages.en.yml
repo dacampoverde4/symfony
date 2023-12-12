@@ -1,0 +1,42 @@
+shop:
+    description: Order our Flexipan® moulds, Flexipat® moulds, Silform® moulds, Silpat® pastry mats, Silpain® bread baking mats, stainless steel baking trays, Fibermax® baking trays, aluminium pastry trays and more products.
+    intro_1: Order our top selling products in one click*.
+    intro_2: A validation email will be sent to confirm your order.
+    intro_note: Shipping fees not included. Pictures non contractual.
+    db:
+        company: Company
+        last_name: Last name
+        first_name: First name
+        email: E-Mail
+        phone: Phone
+        crn: Site tax ID no.
+        address: Address
+        city: City
+        zip_code: ZIP Code
+        country: Country
+        products: Products
+        product_no: Product no.
+        description: Description
+        quantity: Quantity
+        price: Unit price
+        amount: Amount
+        summary: Summary
+        information: Information
+        total_amount: "Total amount:"
+    send: Send
+    by_lot_of: Sold in sets of
+    flash:
+        add_sales_order_success: The order has been successfully registered.
+        errors_in_form: Please check the fields with errors.
+    email:
+        subject_gsd: New order
+        subject_customer: Your order Sasa Demarle
+        new_order_gsd: A new order has been created by a user, here is the information
+        new_order_customer: |
+            Please find below the details of your order placed on our website.
+            Your order will be finally confirmed when you receive from our customer service the final confirmation including the shipping fees.
+        delivery_info: Shipping fees not included.
+        thanks: |
+            Thanks for your order.
+            
+            Sasa-Demarle team.

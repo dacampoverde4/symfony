@@ -1,0 +1,84 @@
+{% extends '::base_emails.html.twig' %}
+
+{% block body %}
+La piste suivante n'a pas pu être créée dans Salesforce.<br>
+{{ message }}<br><br>
+<table style="font-family:Arial;font-size:10pt;">
+	<tr>
+		<td style="font-weight:bold;">ID :</td>
+		<td>{{ contact.id }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'contact_us.db.purpose'|trans }} :</td>
+		<td>{{ contact.purpose }}</td>
+	</tr>
+{% if contact.purpose.isCompany %}
+	<tr>
+		<td style="font-weight:bold;">{{ 'contact_us.db.company'|trans }} :</td>
+		<td>{{ contact.company|default('&Oslash;')|raw }}</td>
+	</tr>
+{% endif %}
+{% if contact.purpose.isActivity %}
+	<tr>
+		<td style="font-weight:bold;">{{ 'contact_us.db.activity'|trans }} :</td>
+		<td>{{ contact.activity|default('&Oslash;')|raw }}</td>
+	</tr>
+{% endif %}
+	<tr>
+		<td style="font-weight:bold;">{{ 'contact_us.db.gender'|trans }} :</td>
+		<td>{{ contact.gender }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'contact_us.db.last_name'|trans }} :</td>
+		<td>{{ contact.lastName }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'contact_us.db.first_name'|trans }} :</td>
+		<td>{{ contact.firstName }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'contact_us.db.email'|trans }} :</td>
+		<td>{{ contact.email }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'contact_us.db.phone'|trans }} :</td>
+		<td>{{ contact.phone }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'contact_us.db.address'|trans }} :</td>
+		<td>{{ contact.address|default('&Oslash;')|raw }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'contact_us.db.city'|trans }} :</td>
+		<td>{{ contact.city }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'contact_us.db.zip_code'|trans }} :</td>
+		<td>{{ contact.zipCode|default('&Oslash;')|raw }}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;">{{ 'contact_us.db.country'|trans }} :</td>
+		<td>{{ contact.country|countryName }}</td>
+	</tr>
+{% if contact.purpose.isProductTypes %}
+	<tr>
+		<td style="font-weight:bold;vertical-align:top;">{{ 'contact_us.db.product_types'|trans }} :</td>
+		<td>
+			<ul>
+			{% for productType in contact.productTypes%}
+				<li>{{ productType }}</li>
+			{% endfor %}
+			</ul>
+		</td>
+	</tr>
+{% endif %}
+	<tr>
+		<td style="font-weight:bold;">{{ 'contact_us.db.promotions_news'|trans }} :</td>
+		<td>{% if contact.promotionsNews == 1 %}{{ 'contact_us.yes'|trans }}{% else %}{{ 'contact_us.no'|trans }}{% endif %}</td>
+	</tr>
+	<tr>
+		<td style="font-weight:bold;vertical-align:top;">{{ 'contact_us.db.message'|trans }} :</td>
+		<td>{{ contact.message|nl2br }}</td>
+	</tr>
+</table>
+{% endblock %}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="{{ app.request.getLocale() }}" prefix="og: http://ogp.me/ns#">
+	<head>
+{% if app.environment == 'prod' %}
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108662115-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-108662115-1');
+		</script>
+{% endif %}
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="{% block description %}{% endblock %}">
+		<title>{% block title %}{{ 'all.title'|trans }}{% endblock %}</title>
+		<meta property="og:locale" content="{% if app.request.getLocale() == 'en' %}en_GB{% else %}fr_FR{% endif %}">
+		<meta property="og:locale:alternate" content="{% if app.request.getLocale() == 'en' %}fr_FR{% else %}en_GB{% endif %}">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="{{ block('title') }}">
+		<meta property="og:description" content="{{ block('description') }}">
+		<meta property="og:url" content="{{ absolute_url(path(app.request.get('_route'))) }}">
+		<meta property="og:site_name" content="{{ 'all.title'|trans }}">
+		<meta property="og:image" content="{{ absolute_url(asset('img/logo_og.jpg')) }}">
+		<link rel="alternate" hreflang="fr" href="{{ absolute_url(path(app.request.get('_route'), {'_locale': 'fr'})) }}">
+		<link rel="alternate" hreflang="en" href="{{ absolute_url(path(app.request.get('_route'), {'_locale': 'en'})) }}">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+		<link rel="manifest" href="{{ asset('manifest.json') }}">
+		<link rel="mask-icon" href="{{ asset('safari-pinned-tab.svg') }}" color="#dd0435">
+		<meta name="theme-color" content="#ffffff">
+
+{% block stylesheets %}
+		<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+		<link href="{{ asset('css/app.min.css') }}" rel="stylesheet" type="text/css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" rel="stylesheet" type="text/css">
+		<link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+{% endblock %}
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="51" id="page-top">
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+				<div class="container">
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+							<span class="sr-only">{{ 'all.toggle_navigation'|trans }}</span> {{ 'all.menu'|trans }} <i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand" href="{{ (app.request.get('_route') == 'app_homepage') ? '#page-top' : path('app_homepage') }}"><img src="{{ asset('img/logo_sasa_demarle.jpg') }}" class="img-responsive" alt="{{ 'all.logo'|trans }}"><small class="hidden-xs">{{ 'all.tag_line'|trans }}</small></a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="page-scroll"><a href="{{ (app.request.get('_route') == 'app_homepage') ? '' : path('app_homepage') }}#groupe">{{ 'all.the_group'|trans }}</a></li>
+							<li class="page-scroll"><a href="{{ (app.request.get('_route') == 'app_homepage') ? '' : path('app_homepage') }}#catalogue">{{ 'all.catalogs'|trans }}</a></li>
+							<li{{ (app.request.get('_route') == 'shop_homepage') ? ' class="active"' : '' }}><a href="{{ path('shop_homepage') }}">{{ 'all.shop'|trans }}</a></li>
+							<li class="dropdown{{ (app.request.get('_route') in ['bonus_video', 'bonus_event', 'bonus_technical_notice']) ? ' active' : '' }}">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ 'all.bonus'|trans }} <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="{{ path('bonus_video') }}">{{ 'all.videos'|trans }}</a></li>
+									<li><a href="{{ path('bonus_event') }}">{{ 'all.events'|trans }}</a></li>
+									<li><a href="{{ path('bonus_technical_notice') }}">{{ 'all.technical_notices'|trans }}</a></li>
+								</ul>
+							</li>
+							<li{{ (app.request.get('_route') == 'contact_us_homepage') ? ' class="active"' : '' }}><a href="{{ path('contact_us_homepage') }}">{{ 'all.contact_us'|trans }}</a></li>
+							<li class="lang-selection"><a href="{{ path(app.request.get('_route'), {'_locale': 'fr'}) }}" class="navbar-link"><img src="{{ asset('img/flag_fr.png') }}" class="img-responsive" alt="{{ 'all.french_flag'|trans }}"></a> <a href="{{ path(app.request.get('_route'), {'_locale': 'en'})}}" class="navbar-link"><img src="{{ asset('img/flag_en.png') }}" class="img-responsive" alt="{{ 'all.english_flag'|trans }}"></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+{% block body %}{% endblock %}
+
+		<footer class="text-center">
+			<div class="footer-above">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-offset-3 col-md-6">
+							<h3>{{ 'all.social_media'|trans }}</h3>
+							<ul class="list-inline">
+								<li><a href="https://www.facebook.com/sasaindustrie/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a></li>
+								<li><a href="https://www.facebook.com/Demarle-1732800273605438/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/sasademarle" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a></li>
+								<li><a href="https://www.youtube.com/channel/UCzpCndxJN4GClWTHZawT6yA" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-youtube"></i></a></li>
+								<li><a href="https://www.instagram.com/groupesasademarle/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a></li>
+								<li><a href="https://fr.linkedin.com/company/groupesasademarle" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin-square"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3>{{ 'all.miscellaneous'|trans }}</h3>
+							<ul class="list-unstyled">
+								<li><a href="{{ path('app_photos_catalog') }}">{{ 'all.terms_of_sales'|trans }} SASA</a></li>
+								<li><a href="{{ path('app_terms_of_sales_demarle') }}">{{ 'all.terms_of_sales'|trans }} Demarle</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-below">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							Copyright &copy; Groupe Sasa Demarle {{ 'now'|date('Y') }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="scroll-top page-scroll">
+			<a class="btn btn-primary" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+		</div>
+
+{% block javascripts %}
+		<script src="{{ asset('js/jquery.min.js') }}"></script>
+		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+		<script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+		<script src="{{ asset('js/app.min.js') }}"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+		<script>window.addEventListener('load',function(){window.cookieconsent.initialise({'palette':{'popup':{'background':'#8F97A1','text':'#ffffff'},'button':{'background':'#EDEDED','text':'#1a242f'}},'theme':'classic','content':{'message':'{{ 'all.cookie.message'|trans }}','dismiss':'{{ 'all.cookie.dismiss'|trans }}','link':'{{ 'all.cookie.link'|trans }}'}});});</script>
+{% endblock %}
+	</body>
+</html>

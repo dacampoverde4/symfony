@@ -1,0 +1,3 @@
+contact_us_homepage:
+    path:     /contactez-nous
+    defaults: { _controller: ContactUsBundle:Public:index }

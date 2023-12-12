@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Email</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body style="font-family:Arial;font-size:10pt;">
+		{{ 'all.email.hello'|trans }},<br /><br />
+		{% block body %}
+		{% endblock %}
+		<br /><br />
+		-----------------------------------------------------------------------<br />
+		{{ 'all.email.no_not_reply'|trans }}
+	</body>
+</html>

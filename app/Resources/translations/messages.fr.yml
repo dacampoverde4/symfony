@@ -1,0 +1,46 @@
+all:
+    title: Groupe Sasa Demarle
+    toggle_navigation: Bascule de la navigation
+    menu: Menu
+    tag_line: Expert en supports de cuisson pour la boulangerie et la pâtisserie
+    the_group: Le groupe
+    catalogs: Catalogue
+    shop: Boutique
+    contact_us: Contactez-nous
+    bonus: Bonus
+    videos: Vidéos
+    events: Événements
+    technical_notices: Notices techniques
+    french_flag: Drapeau Français
+    english_flag: Drapeau Anglais
+    social_media: Medias sociaux
+    logo: Logo
+    miscellaneous: Divers
+    terms_of_sales: CGV
+    cookie:
+        message: Nous utilisons les cookies afin de vous offrir une expérience de navigation pertinente et de qualité. Si vous fermez cette alerte et continuez la navigation, cela signifie que vous acceptez l'utilisation des cookies.
+        dismiss: J'accepte
+        link: Plus d'infos
+    email:
+        hello: Bonjour
+        no_not_reply: Ceci est un message automatique, merci de ne pas y répondre.
+    error:
+        err0:
+            title: Erreur
+            text: |
+                Une erreur est survenue
+                Merci d'envoyer cette erreur à l'administrateur avec ces informations :
+                Code : %status_code%
+                Texte : %status_text%
+        err403:
+            title: Accès non autorisé
+            text: Vous n'avez pas les droits pour accéder à la page.
+        err404:
+            title: Page introuvable
+            text: |
+                La page que vous souhaitez afficher n'existe pas ou n'existe plus.
+                
+                Vous pouvez retourner sur la page d'accueil du site en suivant ce lien :
+        err500:
+            title: Erreur interne
+            text: Le serveur a rencontré une erreur. Si le problème persiste, merci d'en avertir l'administrateur.
